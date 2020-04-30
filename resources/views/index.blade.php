@@ -73,17 +73,17 @@
     </section>
 
     <!-- Two -->
-    <section id="three" class="wrapper style1 fade-up">
+    <section id="two" class="wrapper style1 fade-up">
         <div class="inner">
             <h2>Ultimos Artilucos publicados</h2>
             <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
                 quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit
                 quis lorem.</p>
-            <div class="features">
+            <div class="features" id="blogContainer">
                 <section>
-                    <span class="image left"><img src="{{asset('images/pic05.jpg')}}" alt=""></span>
-                    <h3>Titulo articulo</h3>
-                    <p>Fringilla nisl. Donec accumsan
+                    <span class="image lastArticleImage left"><img src="{{asset('images/pic05.jpg')}}" alt=""></span>
+                    <h3 id="articleTitle">Titulo articulo</h3>
+                    <p id="articleBody">Fringilla nisl. Donec accumsan
                         interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
                         in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
                         faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
@@ -138,3 +138,4 @@
 {{--    </section>--}}
 
 @endsection
+

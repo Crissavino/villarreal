@@ -2,10 +2,11 @@
     <div class="inner">
         <nav>
             <ul>
-                <li><a href="#intro">Welcome</a></li>
-                <li><a href="#one">Who we are</a></li>
-                <li><a href="#two">What we do</a></li>
-                <li><a href="#three">Get in touch</a></li>
+                <li><a href="<?php echo e(route('index')); ?>">Bienvenido</a></li>
+                <li><a href="<?php echo e(route('index')); ?>#one">Quienes somos?</a></li>
+                <li><a href="<?php echo e(route('index')); ?>#two">Ultimos articulos</a></li>
+                <li><a href="#three">Contactanos</a></li>
+                <li><a href="<?php echo e(route('login')); ?>">Pefil</a></li>
             </ul>
         </nav>
     </div>
