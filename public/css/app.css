@@ -1,0 +1,13 @@
+.nombreMarca {
+  text-align: center;
+  font-size: 5em;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+}
+
+.pieMarca{
+  text-align: center;
+  font-size: 1.5em !important;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+}

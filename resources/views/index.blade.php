@@ -1,0 +1,140 @@
+@extends('layouts.app')
+
+@section('content')
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+            <h1 class="nombreMarca">V & V</h1>
+            <p class="pieMarca">Valora a alguien que te da su tiempo, porque es lo unico irrecuperable en la vida.</p>
+{{--            <ul class="actions">--}}
+{{--                <li><a href="#one" class="button scrolly">Learn more</a></li>--}}
+{{--            </ul>--}}
+        </div>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style2 spotlights">
+        <section>
+            <a href="#" class="image"><img src="{{asset('images/pic01.jpg')}}" alt=""
+                                           data-position="center center"/></a>
+            <div class="content">
+                <div class="inner">
+                    <h2>Luis Villarreal</h2>
+                    <p>
+                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                        malesuada quis. Aliquam dapibus.
+                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                        malesuada quis. Aliquam dapibus.
+                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                        malesuada quis. Aliquam dapibus.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <a href="#" class="image"><img src="{{asset('images/pic02.jpg')}}" alt="" data-position="top center"/></a>
+            <div class="content">
+                <div class="inner">
+                    <h2>Fernando Villarreal</h2>
+                    <p>
+                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                        malesuada quis. Aliquam dapibus.
+                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                        malesuada quis. Aliquam dapibus.
+                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                        malesuada quis. Aliquam dapibus.
+                    </p>
+                    {{--                    <ul class="actions">--}}
+                    {{--                        <li><a href="generic.blade.php" class="button">Learn more</a></li>--}}
+                    {{--                    </ul>--}}
+                </div>
+            </div>
+        </section>
+        <section>
+            <a href="#" class="image"><img src="{{asset('images/pic01.jpg')}}" alt=""
+                                           data-position="center center"/></a>
+            <div class="content">
+                <div class="inner">
+                    <h2>El estudio</h2>
+                    <p>
+                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                        malesuada quis. Aliquam dapibus.
+                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                        malesuada quis. Aliquam dapibus.
+                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                        malesuada quis. Aliquam dapibus.
+                    </p>
+                    <ul class="actions">
+                        <li><a href="generic.blade.php" class="button">Saber mas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Two -->
+    <section id="three" class="wrapper style1 fade-up">
+        <div class="inner">
+            <h2>Ultimos Artilucos publicados</h2>
+            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
+                quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit
+                quis lorem.</p>
+            <div class="features">
+                <section>
+                    <span class="image left"><img src="{{asset('images/pic05.jpg')}}" alt=""></span>
+                    <h3>Titulo articulo</h3>
+                    <p>Fringilla nisl. Donec accumsan
+                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
+                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                        Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan
+                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
+                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                    </p>
+                </section>
+                <section>
+                    <span class="image left"><img src="{{asset('images/pic05.jpg')}}" alt=""></span>
+                    <h3>Titulo articulo</h3>
+                    <p>Fringilla nisl. Donec accumsan
+                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
+                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                        Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan
+                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
+                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                    </p>
+                </section>
+                <section>
+                    <span class="image left"><img src="{{asset('images/pic05.jpg')}}" alt=""></span>
+                    <h3>Titulo articulo</h3>
+                    <p>Fringilla nisl. Donec accumsan
+                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
+                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                        Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan
+                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
+                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                    </p>
+                </section>
+            </div>
+            <ul class="actions">
+                <li><a href="generic.blade.php" class="button">Ver el blog</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Three -->
+{{--    <section id="two" class="wrapper style3 fade-up">--}}
+{{--        <div class="inner">--}}
+{{--            <div class="split style1">--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
+
+@endsection
