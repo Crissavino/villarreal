@@ -7,4 +7,5 @@
 <script type="application/javascript" src="<?php echo e(asset('assets/js/main.js')); ?>"></script>
 
 <script type="application/javascript" src="<?php echo e(asset('js/index.js')); ?>"></script>
-<?php /**PATH /home/crissavino/Desktop/.proyects/villarreal/resources/views/partials/scripts.blade.php ENDPATH**/ ?>
+
+<script type="application/javascript" src="<?php echo e(asset('js/menu.js')); ?>"></script><?php /**PATH /home/crissavino/Desktop/.proyects/villarreal/resources/views/partials/scripts.blade.php ENDPATH**/ ?>

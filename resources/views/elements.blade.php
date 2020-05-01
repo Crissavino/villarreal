@@ -16,10 +16,10 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.blade.php" class="title">Hyperspace</a>
+				<a href="pages/index.blade.php" class="title">Hyperspace</a>
 				<nav>
 					<ul>
-						<li><a href="index.blade.php">Home</a></li>
+						<li><a href="pages/index.blade.php">Home</a></li>
 						<li><a href="generic.blade.php">Generic</a></li>
 						<li><a href="elements.blade.php" class="active">Elements</a></li>
 					</ul>

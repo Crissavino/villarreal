@@ -8,6 +8,16 @@ class PageController extends Controller
 {
     public function showIndex()
     {
-        return view('index');
+        return view('pages.index');
+    }
+
+    public function showContacto()
+    {
+        return view('pages.contacto');
+    }
+
+    public function showNosotros()
+    {
+        return view('pages.nosotros');
     }
 }

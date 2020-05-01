@@ -7,3 +7,5 @@
 <script type="application/javascript" src="{{asset('assets/js/main.js')}}"></script>
 
 <script type="application/javascript" src="{{asset('js/index.js')}}"></script>
+
+<script type="application/javascript" src="{{asset('js/menu.js')}}"></script>

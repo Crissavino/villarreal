@@ -15,3 +15,41 @@
 .lastArticleImage{
 
 }
+
+#hamburgerMenu {
+  display: none !important;
+}
+
+.hamburgerMenuIcon {
+  display: none !important;
+}
+
+@media screen and (max-width: 736px) {
+
+  .hamburgerMenuIcon {
+    display: block !important;
+  }
+
+  #sidebar {
+    height: fit-content !important;
+  }
+
+  #hamburgerUL {
+    flex-direction: column !important;
+  }
+
+  #hamburgerNav {
+    width: 100% !important;
+  }
+
+  #hamburgerLI {
+    width: 100% !important;
+    display: inline-block !important;
+    margin: 0 !important;
+  }
+
+  #hamburgerLI:nth-child(5) {
+    border: 0;
+  }
+
+}

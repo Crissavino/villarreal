@@ -28,7 +28,7 @@
                                    id="lastName" value="{{ old('lastName') }}" required autocomplete="name"
                                    placeholder="Apellido"/>
 
-                            @error('name')
+                            @error('lastName')
                             <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

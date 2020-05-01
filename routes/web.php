@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'PageController@showIndex')->name('index');
+Route::get('/nosotros', 'PageController@showNosotros')->name('nosotros');
+Route::get('/contacto', 'PageController@showContacto')->name('contacto');
 

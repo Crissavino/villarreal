@@ -1,8 +1,6 @@
 <?php $__env->startSection('content'); ?>
 
     <!-- Form -->
-
-
     <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
             <section>
@@ -49,7 +47,7 @@ unset($__errorArgs, $__bag); ?>"
                                    id="lastName" value="<?php echo e(old('lastName')); ?>" required autocomplete="name"
                                    placeholder="Apellido"/>
 
-                            <?php $__errorArgs = ['name'];
+                            <?php $__errorArgs = ['lastName'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }

@@ -65,7 +65,7 @@
                         malesuada quis. Aliquam dapibus.
                     </p>
                     <ul class="actions">
-                        <li><a href="generic.blade.php" class="button">Saber mas</a></li>
+                        <li><a href="{{route('nosotros')}}" class="button">Saber mas</a></li>
                     </ul>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                 </section>
             </div>
             <ul class="actions">
-                <li><a href="generic.blade.php" class="button">Ver el blog</a></li>
+                <li><a href="../generic.blade.php" class="button">Ver el blog</a></li>
             </ul>
         </div>
     </section>

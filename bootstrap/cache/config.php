@@ -467,11 +467,11 @@
       'smtp' => 
       array (
         'transport' => 'smtp',
-        'host' => 'smtp.mailtrap.io',
-        'port' => '2525',
-        'encryption' => NULL,
-        'username' => NULL,
-        'password' => NULL,
+        'host' => 'smtp.googlemail.com',
+        'port' => '465',
+        'encryption' => 'ssl',
+        'username' => 'savinocristian89@gmail.com',
+        'password' => 'campeon06',
         'timeout' => NULL,
       ),
       'ses' => 
