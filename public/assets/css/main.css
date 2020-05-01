@@ -3020,6 +3020,14 @@ input, select, textarea {
 				display: block;
 			}
 
+			@media screen and (max-width: 980px) {
+
+				.spotlights > section > .image img {
+					display: none;
+				}
+
+			}
+
 			.spotlights > section > .image:before {
 				-moz-transition: opacity 1s ease;
 				-webkit-transition: opacity 1s ease;

@@ -15,7 +15,7 @@
     <!-- One -->
     <section id="one" class="wrapper style2 spotlights">
         <section>
-            <a href="#" class="image"><img src="<?php echo e(asset('images/pic01.jpg')); ?>" alt=""
+            <a href="#" class="image" style="background-image: url('<?php echo e(asset('images/pic01.jpg')); ?>'); background-position: center center"><img src="<?php echo e(asset('images/pic01.jpg')); ?>" alt=""
                                            data-position="center center"/></a>
             <div class="content">
                 <div class="inner">
@@ -32,7 +32,7 @@
             </div>
         </section>
         <section>
-            <a href="#" class="image"><img src="<?php echo e(asset('images/pic02.jpg')); ?>" alt="" data-position="top center"/></a>
+            <a href="#" class="image" style="background-image: url('<?php echo e(asset('images/pic02.jpg')); ?>'); background-position: center center"><img src="<?php echo e(asset('images/pic02.jpg')); ?>" alt="" data-position="top center"/></a>
             <div class="content">
                 <div class="inner">
                     <h2>Fernando Villarreal</h2>
@@ -51,7 +51,7 @@
             </div>
         </section>
         <section>
-            <a href="#" class="image"><img src="<?php echo e(asset('images/pic01.jpg')); ?>" alt=""
+            <a href="#" class="image" style="background-image: url('<?php echo e(asset('images/pic03.jpg')); ?>'); background-position: center center"><img src="<?php echo e(asset('images/pic03.jpg')); ?>" alt=""
                                            data-position="center center"/></a>
             <div class="content">
                 <div class="inner">
