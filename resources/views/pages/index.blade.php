@@ -26,8 +26,6 @@
                         malesuada quis. Aliquam dapibus.
                         Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
                         malesuada quis. Aliquam dapibus.
-                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
-                        malesuada quis. Aliquam dapibus.
                     </p>
                 </div>
             </div>
@@ -38,8 +36,6 @@
                 <div class="inner">
                     <h2>Fernando Villarreal</h2>
                     <p>
-                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
-                        malesuada quis. Aliquam dapibus.
                         Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
                         malesuada quis. Aliquam dapibus.
                         Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
@@ -59,10 +55,8 @@
                         malesuada quis. Aliquam dapibus.
                         Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
                         malesuada quis. Aliquam dapibus.
-                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
-                        malesuada quis. Aliquam dapibus.
                     </p>
-                    <ul class="actions">
+                    <ul class="actions" style="margin-bottom: 0 !important;">
                         <li><a href="{{route('nosotros')}}" class="button">Saber mas</a></li>
                     </ul>
                 </div>
