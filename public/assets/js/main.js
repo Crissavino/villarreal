@@ -52,12 +52,12 @@
 			$sidebar_a
 				.addClass('scrolly')
 				.on('click', function() {
-
 					var $this = $(this);
 
 					// External link? Bail.
-						if ($this.attr('href').charAt(0) != '#')
-							return;
+				console.log($this.attr('href'));
+					// if ($this.attr('href').charAt(0) != '#')
+					// 	return;
 
 					// Deactivate all links.
 						$sidebar_a.removeClass('active');

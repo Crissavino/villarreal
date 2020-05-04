@@ -4,7 +4,7 @@
     <div id="wrapper">
 
         <!-- Main -->
-        <section id="main" class="wrapper">
+        <section id="main" class="wrapper style1 fullscreen fade-up">
             <div class="inner">
                 <h1 class="major">EJI Villarreal</h1>
                 <span class="image fit"><img src="{{asset('images/pic04.jpg')}}" alt="" /></span>
