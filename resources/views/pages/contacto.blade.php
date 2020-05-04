@@ -21,9 +21,13 @@
                                     <label for="lastName">Apellido</label>
                                     <input type="text" name="lastName" id="lastName" />
                                 </div>
-                                <div class="field">
+                                <div class="field half">
                                     <label for="email">Email</label>
-                                    <input type="text" name="email" id="email" />
+                                    <input type="email" name="email" id="email" />
+                                </div>
+                                <div class="field half">
+                                    <label for="tel">Telefono</label>
+                                    <input type="text" name="tel" id="tel" />
                                 </div>
                                 <div class="field">
                                     <label for="message">Mensaje</label>

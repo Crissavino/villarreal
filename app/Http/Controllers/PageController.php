@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\RecibirContacto;
+use App\Mail\ContactoConfirmado;
+use App\Mail\ContactoRecibido;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -28,22 +29,15 @@ class PageController extends Controller
         $nameTo = $request->name;
         $lastNameTo = $request->lastName;
         $fullName = $nameTo . ' ' . $lastNameTo;
-        $emailTo = $request->email;
+        $contactEmail = $request->email;
+        $contactTel = $request->tel;
         $message = $request->message;
 
-//        $dataWhoSend = [
-//            'name' => 'Cristian',
-//            'body' => 'Enseguida nos pondremos en contacto'
-//        ];
-//
-//        Mail::send('emails.mailContacto', $dataWhoSend, function ($mess) use ($fullName, $emailTo, $message) {
-//            $mess->to($emailTo, $fullName)
-//                ->subject('Contacto EJI Villarreal');
-//
-//            $mess->from('savinocristian89@gmail.com', 'Test email');
-//        });
+        Mail::to(config('mail.from.address'))->send(new ContactoRecibido($fullName, $message, $contactTel));
 
-        Mail::to($emailTo)->send(new RecibirContacto($fullName, $message));
+        if (isset($contactEmail)) {
+            Mail::to($contactEmail)->send(new ContactoConfirmado($fullName));
+        }
 
         return redirect()->route('index')->with('success', 'Contacto realizado');
     }
