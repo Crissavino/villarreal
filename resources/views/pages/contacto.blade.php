@@ -15,23 +15,23 @@
                             <div class="fields">
                                 <div class="field half">
                                     <label for="name">Nombre</label>
-                                    <input type="text" name="name" id="name" />
+                                    <input type="text" name="name" id="name" required/>
                                 </div>
                                 <div class="field half">
                                     <label for="lastName">Apellido</label>
-                                    <input type="text" name="lastName" id="lastName" />
+                                    <input type="text" name="lastName" id="lastName" required/>
                                 </div>
                                 <div class="field half">
                                     <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" />
+                                    <input type="email" name="email" id="email" required/>
                                 </div>
                                 <div class="field half">
                                     <label for="tel">Telefono</label>
-                                    <input type="text" name="tel" id="tel" />
+                                    <input type="text" name="tel" id="tel" required/>
                                 </div>
                                 <div class="field">
                                     <label for="message">Mensaje</label>
-                                    <textarea name="message" id="message" rows="5"></textarea>
+                                    <textarea name="message" id="message" required rows="5"></textarea>
                                 </div>
                             </div>
                             <ul class="actions stacked">
@@ -45,4 +45,8 @@
 
     </div>
 @endsection
+
+@section('javascript')
+    <script src="{{asset('js/contacto.js')}}"></script>
+@stop
 

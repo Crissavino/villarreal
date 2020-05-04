@@ -30,9 +30,9 @@
                     </li>
                     <li>
                         <ul class="icons">
-                            <li><a href="#" class="icon brands fa-instagram fa-2x"><span
+                            <li><a href="https://www.instagram.com/eji.villarreal" target="_blank" class="icon brands fa-instagram fa-2x"><span
                                             class="label">Instagram</span></a></li>
-                            <li><a href="#" class="icon brands fa-whatsapp fa-2x"><span
+                            <li><a href="https://wa.me/544119656?text=Me%20gustaria%20hacerles%20una%20concuslta" target="_blank" class="icon brands fa-whatsapp fa-2x"><span
                                             class="label">WhatsApp</span></a></li>
                         </ul>
                     </li>

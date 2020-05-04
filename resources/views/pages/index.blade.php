@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
+@section('title', 'Bienvenido')
+
 @section('content')
 
     <!-- Intro -->
     <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="flashMessage">
+            @include('flash.messages')
+        </div>
         <div class="inner">
             <h1 class="nombreMarca">V & V</h1>
             <p class="pieMarca">Valora a alguien que te da su tiempo, porque es lo unico irrecuperable en la vida.</p>
@@ -67,7 +72,7 @@
     <!-- Two -->
     <section id="two" class="wrapper style1 fade-up">
         <div class="inner">
-            <h2>Ultimos Artilucos publicados</h2>
+            <h2>Ultimos articulos publicados</h2>
             <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
                 quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit
                 quis lorem.</p>

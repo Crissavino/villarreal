@@ -7,19 +7,19 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     @include('partials.head')
+    <title>EJI Villarreal - @yield('title')</title>
 </head>
 <body>
     <div id="app">
         @include('partials.sidebar')
 
         <div id="wrapper">
-            @include('flash.messages')
-
             @yield('content')
         </div>
 
         @include('partials.footer')
         @include('partials.scripts')
+        @yield('javascript')
     </div>
 </body>
 </html>

@@ -24,6 +24,31 @@
   display: none !important;
 }
 
+.flashMessage {
+  align-self: center;
+  position: absolute;
+  top: 20px;
+  width: 90%;
+  display: inline-block;
+}
+
+.flashMessage div{
+  margin: auto;
+}
+
+.flashMessage button {
+  border-radius: 0;
+  height: 20px;
+}
+
+.flashMessage button span {
+  color: #261c3e;
+}
+
+.flashMessage strong {
+  color: #261c3e;
+}
+
 @media screen and (max-width: 736px) {
 
   .hamburgerMenuIcon {
