@@ -13,6 +13,8 @@
         <?php echo $__env->make('partials.sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
         <div id="wrapper">
+            <?php echo $__env->make('flash.messages', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
             <?php echo $__env->yieldContent('content'); ?>
         </div>
 

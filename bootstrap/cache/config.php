@@ -503,7 +503,7 @@
     ),
     'from' => 
     array (
-      'address' => NULL,
+      'address' => 'savinocristian89@gmail.com',
       'name' => 'Laravel',
     ),
     'markdown' => 

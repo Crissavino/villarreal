@@ -13,6 +13,8 @@
         @include('partials.sidebar')
 
         <div id="wrapper">
+            @include('flash.messages')
+
             @yield('content')
         </div>
 
