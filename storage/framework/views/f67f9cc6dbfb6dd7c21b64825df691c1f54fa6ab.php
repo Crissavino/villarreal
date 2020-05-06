@@ -22,18 +22,18 @@
                     </li>
                     <li>
                         <h3>Email</h3>
-                        <a href="mailto:someone@example.com">estudio@villarreal.com</a>
+                        <a href="mailto:eji.villarreal@gmail.com">eji.villarreal@gmail.com</a>
                     </li>
                     <li>
                         <h3>Telefono</h3>
-                        <span>(221) 777-7777</span>
+                        <span>(221) 421-2313</span>
                     </li>
                     <li>
                         <ul class="icons">
                             <li><a href="https://www.instagram.com/eji.villarreal" target="_blank" class="icon brands fa-instagram fa-2x"><span
                                             class="label">Instagram</span></a></li>
-                            <li><a href="https://wa.me/544119656?text=Me%20gustaria%20hacerles%20una%20concuslta" target="_blank" class="icon brands fa-whatsapp fa-2x"><span
-                                            class="label">WhatsApp</span></a></li>
+
+
                         </ul>
                     </li>
                 </ul>
