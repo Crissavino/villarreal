@@ -3,8 +3,8 @@
         <nav>
             <ul>
                 <li><a href="{{route('index')}}">Bienvenido</a></li>
-                <li><a href="{{route('index')}}#one">Quienes somos?</a></li>
-                <li><a href="{{route('index')}}#two">Ultimos articulos</a></li>
+                <li><a href="{{route('index')}}#two">Quienes somos?</a></li>
+                <li><a href="{{route('index')}}#one">Ultimos articulos</a></li>
 {{--                <li><a href="{{route('contacto')}}">Contactanos</a></li>--}}
                 <li id="hamburgerLI"><a href="#">Contactanos</a></li>
                 @auth
