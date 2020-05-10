@@ -77,38 +77,11 @@
 
     <!-- Two -->
     <section id="two" class="wrapper style1 spotlights">
-{{--        <section>--}}
-{{--            <a class="image" style="background-image: url('{{asset('images/pic01.jpg')}}'); background-position: center center"><img src="{{asset('images/pic01.jpg')}}" alt=""--}}
-{{--                                                                                                                                     data-position="center center"/></a>--}}
-{{--            <div class="content">--}}
-{{--                <div class="inner">--}}
-{{--                    <h2>Luis Villarreal</h2>--}}
-{{--                    <p>--}}
-{{--                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat--}}
-{{--                        malesuada quis. Aliquam dapibus.--}}
-{{--                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat--}}
-{{--                        malesuada quis. Aliquam dapibus.--}}
-{{--                    </p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
-{{--        <section>--}}
-{{--            <a class="image" style="background-image: url('{{asset('images/pic02.jpg')}}'); background-position: center center"><img src="{{asset('images/pic02.jpg')}}" alt="" data-position="top center"/></a>--}}
-{{--            <div class="content">--}}
-{{--                <div class="inner">--}}
-{{--                    <h2>Fernando Villarreal</h2>--}}
-{{--                    <p>--}}
-{{--                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat--}}
-{{--                        malesuada quis. Aliquam dapibus.--}}
-{{--                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat--}}
-{{--                        malesuada quis. Aliquam dapibus.--}}
-{{--                    </p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
+
         <section>
-            <a href="{{route('nosotros')}}" class="image" style="background-image: url('{{asset('images/pic03.jpg')}}'); background-position: center center"><img src="{{asset('images/pic03.jpg')}}" alt=""
-                                                                                                                                                                  data-position="center center"/></a>
+            <a href="{{route('nosotros')}}" class="image" style="background-image: url('{{asset('images/pic03.jpg')}}'); background-position: center center">
+{{--                <img src="{{asset('images/pic03.jpg')}}" alt="" data-position="center center"/>--}}
+            </a>
             <div class="content">
                 <div class="inner">
                     <h2>El estudio</h2>

@@ -3012,7 +3012,9 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 25em;
+			/*width: 25em;*/
+			width: 100%;
+			height: 50vh;
 		}
 
 			.spotlights > section > .image img {
@@ -3104,7 +3106,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		/*@media screen and (max-width: 980px) {*/
 
 			.spotlights > section {
 				display: block;
@@ -3127,7 +3129,7 @@ input, select, textarea {
 					transform: translateY(1em);
 				}
 
-		}
+		/*}*/
 
 		@media screen and (max-width: 736px) {
 
