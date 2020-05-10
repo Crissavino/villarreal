@@ -41,4 +41,9 @@ class PageController extends Controller
 
         return redirect()->route('index')->with('success', 'Contacto realizado');
     }
+
+    public function showPerfil(Request $request)
+    {
+        return view('pages.perfil', ['user' => auth()->user()]);
+    }
 }

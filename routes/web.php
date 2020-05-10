@@ -18,6 +18,7 @@ Route::get('/', 'PageController@showIndex')->name('index');
 Route::get('/nosotros', 'PageController@showNosotros')->name('nosotros');
 Route::get('/contacto', 'PageController@showContacto')->name('contacto');
 Route::post('/contacto', 'PageController@sendMailContacto')->name('recibirContacto');
+Route::get('/perfil', 'PageController@showPerfil')->name('perfil');
 
 // middleware para que sea admin
 // DASHBOARD
