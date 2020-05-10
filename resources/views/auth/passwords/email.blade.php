@@ -28,12 +28,14 @@
                             @enderror
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Enviar link al mail') }}
-                                </button>
-                            </div>
+                        <div class="col-12">
+                            <ul class="actions stacked">
+                                <li>
+                                    <button type="submit" class="primary fit">
+                                        {{ __('Enviar link al mail') }}
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
 
                     </div>

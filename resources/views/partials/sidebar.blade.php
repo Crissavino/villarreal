@@ -5,13 +5,11 @@
                 <li><a href="{{route('index')}}">Bienvenido</a></li>
                 <li><a href="{{route('index')}}#two">Quienes somos?</a></li>
                 <li><a href="{{route('index')}}#one">Ultimos articulos</a></li>
-{{--                <li><a href="{{route('contacto')}}">Contactanos</a></li>--}}
-                <li id="hamburgerLI"><a href="#">Contactanos</a></li>
+                <li><a href="{{route('contacto')}}">Contactanos</a></li>
                 @auth
-                    <li id="hamburgerLI"><a href="{{route('login')}}">Pefil</a></li>
+                    <li id="hamburgerLI"><a href="{{route('perfil')}}">Pefil</a></li>
                 @else
-{{--                    <li id="hamburgerLI"><a href="{{route('register')}}">Pefil</a></li>--}}
-                    <li id="hamburgerLI"><a href="#">Pefil</a></li>
+                    <li id="hamburgerLI"><a href="{{route('login')}}">Pefil</a></li>
                 @endauth
             </ul>
         </nav>
@@ -26,13 +24,11 @@
                 <li id="hamburgerLI"><a href="{{route('index')}}">Bienvenido</a></li>
                 <li id="hamburgerLI"><a href="{{route('index')}}#one">Quienes somos?</a></li>
                 <li id="hamburgerLI"><a href="{{route('index')}}#two">Ultimos articulos</a></li>
-{{--                <li id="hamburgerLI"><a href="{{route('contacto')}}">Contactanos</a></li>--}}
-                <li id="hamburgerLI"><a href="#">Contactanos</a></li>
+                <li id="hamburgerLI"><a href="{{route('contacto')}}">Contactanos</a></li>
                 @auth
-                    <li id="hamburgerLI"><a href="{{route('login')}}">Pefil</a></li>
+                    <li id="hamburgerLI"><a href="{{route('perfil')}}">Pefil</a></li>
                 @else
-{{--                    <li id="hamburgerLI"><a href="{{route('register')}}">Pefil</a></li>--}}
-                    <li id="hamburgerLI"><a href="#">Pefil</a></li>
+                    <li id="hamburgerLI"><a href="{{route('login')}}">Pefil</a></li>
                 @endauth
             </ul>
         </nav>

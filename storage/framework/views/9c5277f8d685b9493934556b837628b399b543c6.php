@@ -5,13 +5,11 @@
                 <li><a href="<?php echo e(route('index')); ?>">Bienvenido</a></li>
                 <li><a href="<?php echo e(route('index')); ?>#two">Quienes somos?</a></li>
                 <li><a href="<?php echo e(route('index')); ?>#one">Ultimos articulos</a></li>
-
-                <li id="hamburgerLI"><a href="#">Contactanos</a></li>
+                <li><a href="<?php echo e(route('contacto')); ?>">Contactanos</a></li>
                 <?php if(auth()->guard()->check()): ?>
-                    <li id="hamburgerLI"><a href="<?php echo e(route('login')); ?>">Pefil</a></li>
+                    <li id="hamburgerLI"><a href="<?php echo e(route('perfil')); ?>">Pefil</a></li>
                 <?php else: ?>
-
-                    <li id="hamburgerLI"><a href="#">Pefil</a></li>
+                    <li id="hamburgerLI"><a href="<?php echo e(route('login')); ?>">Pefil</a></li>
                 <?php endif; ?>
             </ul>
         </nav>
@@ -26,13 +24,11 @@
                 <li id="hamburgerLI"><a href="<?php echo e(route('index')); ?>">Bienvenido</a></li>
                 <li id="hamburgerLI"><a href="<?php echo e(route('index')); ?>#one">Quienes somos?</a></li>
                 <li id="hamburgerLI"><a href="<?php echo e(route('index')); ?>#two">Ultimos articulos</a></li>
-
-                <li id="hamburgerLI"><a href="#">Contactanos</a></li>
+                <li id="hamburgerLI"><a href="<?php echo e(route('contacto')); ?>">Contactanos</a></li>
                 <?php if(auth()->guard()->check()): ?>
-                    <li id="hamburgerLI"><a href="<?php echo e(route('login')); ?>">Pefil</a></li>
+                    <li id="hamburgerLI"><a href="<?php echo e(route('perfil')); ?>">Pefil</a></li>
                 <?php else: ?>
-
-                    <li id="hamburgerLI"><a href="#">Pefil</a></li>
+                    <li id="hamburgerLI"><a href="<?php echo e(route('login')); ?>">Pefil</a></li>
                 <?php endif; ?>
             </ul>
         </nav>
