@@ -11,10 +11,16 @@ class Article extends Model
         'content',
         'votes',
         'creator',
+        'clicks'
     ];
 
     public function tags()
     {
-        return $this->belongsToMany(Article::class);
+        return $this->belongsToMany(Tag::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
     }
 }

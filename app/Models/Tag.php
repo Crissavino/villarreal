@@ -8,10 +8,11 @@ class Tag extends Model
 {
     protected $fillable = [
         'title',
+        'clicks'
     ];
 
     public function articles()
     {
-        return $this->belongsToMany(Tag::class);
+        return $this->belongsToMany(Article::class);
     }
 }

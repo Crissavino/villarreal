@@ -19,6 +19,12 @@
                 </a>
             </li>
             <li>
+                <a class="nav-link" href="{{route('dashboard-blog')}}">
+                    <i class="nc-icon nc-paper-2"></i>
+                    <p>Blog</p>
+                </a>
+            </li>
+            <li>
                 <a class="nav-link" href="./table.html">
                     <i class="nc-icon nc-notes"></i>
                     <p>Table List</p>
