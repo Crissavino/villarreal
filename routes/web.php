@@ -24,5 +24,6 @@ Route::get('/perfil', 'PageController@showPerfil')->name('perfil');
 // DASHBOARD
 Route::get('/admin/dashboard', 'DashboardController@showIndex')->name('dashboard-index');
 Route::get('/admin/dashboard/user', 'DashboardController@showUsers')->name('dashboard-user');
+Route::get('/admin/dashboard/blog', 'DashboardController@showBlog')->name('dashboard-blog');
 // FIN DASHBOARD
 

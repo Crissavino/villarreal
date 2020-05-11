@@ -15,4 +15,9 @@ class DashboardController extends Controller
     {
         return view('dashboard.user');
     }
+
+    public function showBlog()
+    {
+        return view('dashboard.pages.blog');
+    }
 }
