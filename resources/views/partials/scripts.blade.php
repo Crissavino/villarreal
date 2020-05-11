@@ -9,3 +9,16 @@
 <script type="application/javascript" src="{{asset('js/index.js')}}"></script>
 
 <script type="application/javascript" src="{{asset('js/menu.js')}}"></script>
+
+<script>
+  function goToIndexOne() {
+    if(window.location.pathname !== '/') {
+      window.location = "{!! route('index') . '#one'!!}"
+    }
+  }
+  function goToIndexTwo() {
+    if(window.location.pathname !== '/') {
+      window.location = "{!! route('index') . '#two' !!}"
+    }
+  }
+</script>

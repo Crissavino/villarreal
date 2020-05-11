@@ -10,7 +10,7 @@
     <title>EJI Villarreal - @yield('title')</title>
 </head>
 <body>
-    <div id="app">
+    <div>
         @include('partials.sidebar')
 
         <div id="wrapper">
@@ -32,6 +32,9 @@
         @include('partials.footer')
         @include('partials.scripts')
         @yield('javascript')
+        <script>
+          console.log('hola');
+        </script>
     </div>
 </body>
 </html>
