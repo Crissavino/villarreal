@@ -10,8 +10,8 @@ class Article extends Model
         'title',
         'content',
         'votes',
-        'creator',
-        'clicks'
+        'creator_id',
+        'clicks',
     ];
 
     public function tags()
@@ -27,5 +27,10 @@ class Article extends Model
     public function creator()
     {
         return $this->belongsTo(Creator::class);
+    }
+
+    public function image()
+    {
+        return $this->hasOne(Image::class);
     }
 }

@@ -24,8 +24,12 @@ Route::get('/perfil', 'PageController@showPerfil')->name('perfil');
 // DASHBOARD
 Route::get('/admin/dashboard', 'DashboardController@showIndex')->name('dashboard-index');
 Route::get('/admin/dashboard/user', 'DashboardController@showUsers')->name('dashboard-user');
-Route::get('/admin/dashboard/blog', 'DashboardController@addArticle')->name('dashboard-blog');
-Route::post('/admin/dashboard/blog', 'DashboardController@storeArticle')->name('dashboard-store-article');
+Route::get('/admin/dashboard/blog', 'DashboardController@showBlog')->name('dashboard-blog');
+Route::get('/admin/dashboard/blog/create', 'DashboardController@addArticle')->name('dashboard-add-article');
+Route::post('/admin/dashboard/blog/create', 'DashboardController@storeArticle')->name('dashboard-store-article');
+Route::get('/admin/dashboard/blog/edit/{id}', 'DashboardController@editArticle')->name('dashboard-edit-article');
+Route::put('/admin/dashboard/blog/edit/{id}', 'DashboardController@updateArticle')->name('dashboard-update-article');
+Route::delete('/admin/dashboard/blog/delete/{id}', 'DashboardController@deleteArticle')->name('dashboard-delete-article');
 
 // FIN DASHBOARD
 
