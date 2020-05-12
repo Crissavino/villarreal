@@ -12,15 +12,17 @@
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form class="container">
+                    <form class="container" method="post" action="{{route('dashboard-store-article')}}" >
+                        @csrf
+                        @method('POST')
                         <div class="row">
-                            <div class="col-md-6 pr-1">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Titulo del articulo</label>
                                     <input type="text" class="form-control" placeholder="" name="title" value="">
                                 </div>
                             </div>
-                            <div class="col-md-6 px-1">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Creador</label>
                                     <select class="form-control" name="creator_id" id="">
@@ -31,7 +33,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12 pr-1">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Tags</label>
                                     <select class="form-control" name="tag_id" id="">
@@ -46,14 +48,14 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12 pr-1">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Contenido del articulo</label>
                                     <textarea name="content" id="" class="form-control wygiwys" cols="60" rows="10"></textarea>
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                        <button type="submit" class="btn btn-info btn-fill btn-block">Guardar articulo</button>
                         <div class="clearfix"></div>
                     </form>
                 </div>
