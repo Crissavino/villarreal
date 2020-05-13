@@ -13,6 +13,7 @@ class Article extends Model
         'votes',
         'creator_id',
         'clicks',
+        'visible',
     ];
 
     use SoftDeletes;

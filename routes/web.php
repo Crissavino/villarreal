@@ -14,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 
-Route::get('/', 'PageController@showIndex')->name('index');
-Route::get('/nosotros', 'PageController@showNosotros')->name('nosotros');
-Route::get('/contacto', 'PageController@showContacto')->name('contacto');
-Route::post('/contacto', 'PageController@sendMailContacto')->name('recibirContacto');
-Route::get('/perfil', 'PageController@showPerfil')->name('perfil');
+Route::get('/', 'PagesController@showIndex')->name('index');
+Route::get('/nosotros', 'PagesController@showNosotros')->name('nosotros');
+Route::get('/contacto', 'PagesController@showContacto')->name('contacto');
+Route::post('/contacto', 'PagesController@sendMailContacto')->name('recibirContacto');
+Route::get('/perfil', 'PagesController@showPerfil')->name('perfil');
+Route::get('/blog', 'PagesController@showBlog')->name('blog');
+Route::get('/blog/articulo/{id}', 'PagesController@showArticle')->name('articulo');
 
 // middleware para que sea admin
 // DASHBOARD
@@ -27,6 +29,7 @@ Route::get('/admin/dashboard/user', 'DashboardController@showUsers')->name('dash
 Route::get('/admin/dashboard/blog', 'DashboardController@showBlog')->name('dashboard-blog');
 Route::get('/admin/dashboard/blog/create', 'DashboardController@addArticle')->name('dashboard-add-article');
 Route::post('/admin/dashboard/blog/create', 'DashboardController@storeArticle')->name('dashboard-store-article');
+Route::put('/admin/dashboard/blog/changeVisibility', 'DashboardController@changeVisibility')->name('dashboard-article-visibility');
 Route::get('/admin/dashboard/blog/edit/{id}', 'DashboardController@editArticle')->name('dashboard-edit-article');
 Route::put('/admin/dashboard/blog/edit/{id}', 'DashboardController@updateArticle')->name('dashboard-update-article');
 Route::delete('/admin/dashboard/blog/delete/{id}', 'DashboardController@deleteArticle')->name('dashboard-delete-article');

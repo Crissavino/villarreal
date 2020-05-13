@@ -1898,7 +1898,7 @@ input, select, textarea {
 		input[type="button"].small,
 		button.small,
 		.button.small {
-			font-size: 0.4em;
+			font-size: 0.5em;
 		}
 
 		input[type="submit"].large,

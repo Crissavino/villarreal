@@ -10,9 +10,3 @@
 <script src="{{asset('dashboard/assets/js/plugins/bootstrap-notify.js')}}"></script>
 <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
 <script src="{{asset('dashboard/assets/js/light-bootstrap-dashboard.js')}}?v=2.0.0 " type="text/javascript"></script>
-
-<script type="text/javascript">
-  $(document).ready(function() {
-
-  });
-</script>

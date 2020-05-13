@@ -4,14 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactoConfirmado;
 use App\Mail\ContactoRecibido;
+use App\Models\Article;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
-class PageController extends Controller
+class PagesController extends Controller
 {
     public function showIndex()
     {
-        return view('pages.index');
+        $articles = Article::where('visible', 1)->orderBy('created_at', 'desc')->take(3)->get();
+
+        return view('pages.index')->with([
+            'articles' => $articles
+        ]);
     }
 
     public function showNosotros()
@@ -46,4 +52,26 @@ class PageController extends Controller
     {
         return view('pages.perfil', ['user' => auth()->user()]);
     }
+
+    public function showBlog()
+    {
+        $articles = Article::orderBy('created_at', 'desc')->paginate(5);
+        $tags = Tag::all();
+
+        return view('pages.blog')->with([
+            'articles' => $articles,
+            'tags' => $tags,
+        ]);
+    }
+
+    public function showArticle(Request $request)
+    {
+        $article = Article::find($request->id);
+
+        return view('pages.article')->with([
+            'article' => $article
+        ]);
+
+    }
+
 }

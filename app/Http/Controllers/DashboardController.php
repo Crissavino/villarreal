@@ -98,8 +98,22 @@ class DashboardController extends Controller
 
         $article->delete();
 
-        return Response::json(['mensaje' => 'Se eliminó el articulo correctamente'], 200);
+        return redirect()->back();
 
+    }
+
+    public function changeVisibility(Request $request)
+    {
+        $article = Article::find($request->articleId);
+
+        $article->update([
+           'visible' => $request->visibility
+        ]);
+
+        if ($request->visibility) {
+            return Response::json('El articulo ahora esta visible', 200);
+        }
+        return Response::json('El articulo ahora no esta visible', 200);
     }
 
     /**

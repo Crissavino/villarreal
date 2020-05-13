@@ -31,13 +31,22 @@
                                     <div class="card-body">
                                         <p class="card-text">{!! $article->content !!}</p>
                                     </div>
-                                    <div class="card-footer mt-3">
-                                        <a href="{{route('dashboard-edit-article', ['id' => $article->id])}}" class="btn-fill btn btn-primary mb-5">
+                                    <div class="card-footer text-center mt-3">
+                                        @if ($article->visible)
+                                            <button onclick="changeVisibility({{$article->id}}, 0)" class="btn-block btn-fill btn btn-info d-inline-block">
+                                                Ocultar
+                                            </button>
+                                        @else
+                                            <button onclick="changeVisibility({{$article->id}}, 1)" class="btn-block btn-fill btn btn-success d-inline-block">
+                                                Mostrar
+                                            </button>
+                                        @endif
+                                        <a href="{{route('dashboard-edit-article', ['id' => $article->id])}}" class="btn-block btn-fill mt-2 mb-2 btn btn-primary d-inline-block">
                                             Editar
                                         </a>
-                                        <a href="{{route('dashboard-delete-article', ['id' => $article->id])}}" class="btn-fill btn btn-danger mb-5">
-                                            Eliminar
-                                        </a>
+                                        <form class="d-inline-block w-100" action="{{route('dashboard-delete-article', ['id' => $article->id])}}">
+                                            <button class="btn-fill btn btn-danger btn-block" type="submit">Eliminar</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -52,6 +61,31 @@
 @endsection
 
 @section('javascript')
+    <script>
+          function changeVisibility(articleId, visibility) {
+            console.log(JSON.parse(visibility));
+            fetch("{{route('dashboard-article-visibility')}}", {
+              method: 'PUT',
+              body: JSON.stringify({visibility: visibility, articleId: articleId}),
+              headers:{
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+              }
+            }).then(res => res.text())
+            .catch(error => console.error('Error:', error))
+            .then(res => {
+              if (res !== '') {
+                Swal.fire(
+                    'Articulo actualizado',
+                    res,
+                    'success'
+                ).then( () => {
+                  location.reload()
+                });
+              }
 
+            });
+          }
+    </script>
 @stop
 

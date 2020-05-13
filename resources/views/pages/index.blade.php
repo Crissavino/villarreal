@@ -26,51 +26,18 @@
                 quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit
                 quis lorem.</p>
             <div class="features" id="blogContainer">
-                <section>
-                    <span class="image lastArticleImage left"><img src="{{asset('images/pic05.jpg')}}" alt=""></span>
-                    <h3 id="articleTitle">Titulo articulo</h3>
-                    <p id="articleBody">Fringilla nisl. Donec accumsan
-                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
-                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
-                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
-                        Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan
-                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
-                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
-                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
-                    </p>
-                </section>
-                <section>
-                    <span class="image left"><img src="{{asset('images/pic05.jpg')}}" alt=""></span>
-                    <h3>Titulo articulo</h3>
-                    <p>Fringilla nisl. Donec accumsan
-                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
-                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
-                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
-                        Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan
-                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
-                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
-                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
-                    </p>
-                </section>
-                <section>
-                    <span class="image left"><img src="{{asset('images/pic05.jpg')}}" alt=""></span>
-                    <h3>Titulo articulo</h3>
-                    <p>Fringilla nisl. Donec accumsan
-                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
-                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
-                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
-                        Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan
-                        interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis
-                        in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
-                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
-                    </p>
-                </section>
+                @foreach ($articles as $article)
+                    <section class="d-block w-100">
+                        <a href="{{route('articulo', ['id' => $article->id])}}"><span class="image lastArticleImage left"><img src="{{$article->image->path}}" alt=""></span></a>
+                        <a href="{{route('articulo', ['id' => $article->id])}}"><h3 id="articleTitle">{{$article->title}}</h3></a>
+                        <p>
+                            {!! $article->content !!}
+                        </p>
+                    </section>
+                @endforeach
             </div>
             <ul class="actions">
-                <li><a href="" class="button">Ver el blog</a></li>
+                <li><a href="{{route('blog')}}" class="button">Ver el blog</a></li>
             </ul>
         </div>
     </section>
