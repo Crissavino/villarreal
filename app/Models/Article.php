@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Article extends Model
 {
@@ -13,6 +14,8 @@ class Article extends Model
         'creator_id',
         'clicks',
     ];
+
+    use SoftDeletes;
 
     public function tags()
     {

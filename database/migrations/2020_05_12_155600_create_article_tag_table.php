@@ -17,7 +17,8 @@ class CreateArticleTagTable extends Migration
             $table->bigIncrements('id');
             $table->integer('article_id')->unsigned();
             $table->integer('tag_id')->unsigned();
-            $table->timestamps();
+            $table->softDeletesTz();
+            $table->timestampsTz();
         });
     }
 

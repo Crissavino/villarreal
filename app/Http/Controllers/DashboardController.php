@@ -7,6 +7,7 @@ use App\Models\Creator;
 use App\Models\Image;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Str;
 
 class DashboardController extends Controller
@@ -33,7 +34,7 @@ class DashboardController extends Controller
         $creators = Creator::all();
         $tags = Tag::all();
 
-        return view('dashboard.pages.blog.create', [
+        return view('dashboard.pages.blog.create')->with([
             'creators' => $creators,
             'tags' => $tags
         ]);
@@ -87,12 +88,18 @@ class DashboardController extends Controller
             $this->createImageArticle($data['title'], $request, $article->id);
         }
 
-        return redirect()->route('dashboard-blog')->with('success', 'Articulo creado correctamente');
+        return redirect()->route('dashboard-blog')->with('success', 'Articulo editadp correctamente');
     }
 
     public function deleteArticle(Request $request)
     {
-        dd($request->all());
+
+        $article = Article::find($request->id);
+
+        $article->delete();
+
+        return Response::json(['mensaje' => 'Se eliminó el articulo correctamente'], 200);
+
     }
 
     /**

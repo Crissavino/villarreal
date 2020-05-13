@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateImagesTable extends Migration
+class AddUserNameToCreatorTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('images', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('path');
-            $table->integer('article_id')->unsigned();
-            $table->softDeletesTz();
-            $table->timestampsTz();
+        Schema::table('creators', function (Blueprint $table) {
+            $table->string('userName')->after('id');
         });
     }
 
@@ -29,6 +25,8 @@ class CreateImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('images');
+        Schema::table('creators', function (Blueprint $table) {
+            $table->dropColumn('userName');
+        });
     }
 }

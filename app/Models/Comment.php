@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\User;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Comment extends Model
 {
@@ -12,6 +13,8 @@ class Comment extends Model
         'user_id',
         'article_id',
     ];
+
+    use SoftDeletes;
 
     public function user()
     {

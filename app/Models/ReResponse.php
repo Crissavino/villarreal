@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ReResponse extends Model
 {
@@ -11,6 +12,8 @@ class ReResponse extends Model
         'user_id',
         'response_id',
     ];
+
+    use SoftDeletes;
 
     public function response()
     {

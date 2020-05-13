@@ -20,7 +20,8 @@ class CreateArticlesTable extends Migration
             $table->integer('votes')->nullable();
             $table->integer('creator_id')->unsigned();
             $table->integer('clicks')->nullable();
-            $table->timestamps();
+            $table->softDeletesTz();
+            $table->timestampsTz();
         });
     }
 

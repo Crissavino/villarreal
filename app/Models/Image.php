@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Image extends Model
 {
@@ -10,6 +11,8 @@ class Image extends Model
         'path',
         'article_id'
     ];
+
+    use SoftDeletes;
 
     public function article()
     {

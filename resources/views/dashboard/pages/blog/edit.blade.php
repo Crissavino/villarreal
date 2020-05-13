@@ -46,8 +46,9 @@
                                 <div class="form-group">
                                     <label>Creador</label>
                                     <select class="form-control" name="creator_id" id="">
-                                        <option {{ ($article->creator->user_id === 2) ? 'selected' : '' }} value="2">Luis</option>
-                                        <option {{ ($article->creator->user_id === 1) ? 'selected' : '' }} value="1">Fernando</option>
+                                        @foreach ($creators as $creator)
+                                            <option {{ ($article->creator_id === $creator->id) ? 'selected' : '' }} value="{{ $creator->id }}">{{ $creator->userName }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

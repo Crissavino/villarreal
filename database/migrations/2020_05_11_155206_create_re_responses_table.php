@@ -18,7 +18,8 @@ class CreateReResponsesTable extends Migration
             $table->longText('content');
             $table->integer('user_id')->unsigned();
             $table->integer('response_id')->unsigned();
-            $table->timestamps();
+            $table->softDeletesTz();
+            $table->timestampsTz();
         });
     }
 
