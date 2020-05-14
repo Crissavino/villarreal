@@ -53,10 +53,16 @@ class PagesController extends Controller
         return view('pages.perfil', ['user' => auth()->user()]);
     }
 
-    public function showBlog()
+    public function showBlog(Request $request)
     {
+
         $articles = Article::orderBy('created_at', 'desc')->paginate(5);
         $tags = Tag::all();
+
+        if ($request->tagTitle) {
+            $selectedTag = Tag::where('title', $request->tagTitle)->first();
+            $articles = $selectedTag->articles()->paginate(5);
+        }
 
         return view('pages.blog')->with([
             'articles' => $articles,

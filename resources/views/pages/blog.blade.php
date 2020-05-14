@@ -6,10 +6,10 @@
         <!-- Main -->
         <section id="main" class="wrapper style1 fullscreen fade-up">
             <div class="inner">
-                <h2>Articulos publicados</h2>
+                <a href="{{route('blog')}}"><h2>Articulos publicados</h2></a>
                     <ul class="actions small row d-inline-flex">
                         @foreach ($tags as $tag)
-                            <li><a href="#" class="button primary small">{{$tag->title}}</a></li>
+                            <li><a href="{{route('blog', ['tagTitle' => $tag->title])}}" class="button primary small">{{$tag->title}}</a></li>
                         @endforeach
                     </ul>
                 <div class="features" id="blogContainer">
