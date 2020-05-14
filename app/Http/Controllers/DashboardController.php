@@ -52,7 +52,7 @@ class DashboardController extends Controller
 
         $article->tags()->sync($data['tags_id']);
 
-        $this->createImageArticle($data['title'], $request, $savedArticle->id);
+        $this->storeImageArticle($data['title'], $request, $savedArticle->id);
 
         return redirect()->route('dashboard-blog')->with('success', 'Articulo creado correctamente');
     }
@@ -85,7 +85,7 @@ class DashboardController extends Controller
         if (isset($request->banner)) {
             $article->image->delete();
 
-            $this->createImageArticle($data['title'], $request, $article->id);
+            $this->storeImageArticle($data['title'], $request, $article->id);
         }
 
         return redirect()->route('dashboard-blog')->with('success', 'Articulo editadp correctamente');
@@ -175,7 +175,7 @@ class DashboardController extends Controller
      * @param Request $request
      * @param         $articleId
      */
-    private function createImageArticle($title, Request $request, $articleId): void
+    private function storeImageArticle($title, Request $request, $articleId): void
     {
         $imagen = Str::slug($title).'-banner';
 
@@ -185,11 +185,8 @@ class DashboardController extends Controller
 
         $pathImagen = str_replace('public', 'storage', $pathImagen);
 
-//        $urlBackEnd = 'https://ejivillarreal.com/';
-        $urlBackEnd = 'http://127.0.0.1:8000/';
-
         Image::create([
-            'path'       => $urlBackEnd.$pathImagen,
+            'path'       => $request->getSchemeAndHttpHost().'/'.$pathImagen,
             'article_id' => $articleId
         ]);
     }

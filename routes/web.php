@@ -19,7 +19,7 @@ Route::get('/nosotros', 'PagesController@showNosotros')->name('nosotros');
 Route::get('/contacto', 'PagesController@showContacto')->name('contacto');
 Route::post('/contacto', 'PagesController@sendMailContacto')->name('recibirContacto');
 Route::get('/perfil', 'PagesController@showPerfil')->name('perfil')->middleware('auth');
-Route::get('/blog', 'PagesController@showBlog')->name('blog');
+Route::get('/blog/{tagTitle?}', 'PagesController@showBlog')->name('blog');
 Route::get('/blog/articulo/{id}', 'PagesController@showArticle')->name('articulo');
 
 // middleware para que sea admin

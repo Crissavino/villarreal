@@ -23,7 +23,7 @@
     @include('dashboard.partials.sidebar')
 
     <div class="main-panel">
-        @include('dashboard.partials.header')
+{{--        @include('dashboard.partials.header')--}}
 
         <div class="content">
             @yield('content')

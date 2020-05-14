@@ -31,7 +31,7 @@
                         <a href="{{route('articulo', ['id' => $article->id])}}"><span class="image lastArticleImage left"><img src="{{$article->image->path}}" alt=""></span></a>
                         <a href="{{route('articulo', ['id' => $article->id])}}"><h3 id="articleTitle">{{$article->title}}</h3></a>
                         <p>
-                            {!! $article->content !!}
+                            {!! Str::limit($article->content, 1000) !!}
                         </p>
                     </section>
                 @endforeach
