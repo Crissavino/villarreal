@@ -14,6 +14,8 @@ class ContactoRecibido extends Mailable
     private $fromFullName;
     private $message;
     private $contactTel;
+    private $motivoConsulta;
+    private $tiposContacto;
 
     /**
      * Create a new message instance.
@@ -21,12 +23,16 @@ class ContactoRecibido extends Mailable
      * @param $fromFullName
      * @param $message
      * @param $contactTel
+     * @param $motivoConsulta
+     * @param $tiposContacto
      */
-    public function __construct($fromFullName, $message, $contactTel)
+    public function __construct($fromFullName, $message, $contactTel, $motivoConsulta, $tiposContacto)
     {
         $this->fromFullName = $fromFullName;
         $this->message = $message;
         $this->contactTel = $contactTel;
+        $this->motivoConsulta = $motivoConsulta;
+        $this->tiposContacto = $tiposContacto;
     }
 
     /**
@@ -41,6 +47,8 @@ class ContactoRecibido extends Mailable
             ->with([
                 'fullName' => $this->fromFullName,
                 'contactTel' => $this->contactTel,
+                'motivoConsulta' => $this->motivoConsulta,
+                'tiposContacto' => $this->tiposContacto,
                 'body' => $this->message
             ]);
     }

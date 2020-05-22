@@ -471,7 +471,7 @@
         'port' => '465',
         'encryption' => 'ssl',
         'username' => 'savinocristian89@gmail.com',
-        'password' => 'campeon06',
+        'password' => 'Campeon09!',
         'timeout' => NULL,
       ),
       'ses' => 

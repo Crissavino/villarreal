@@ -21,8 +21,12 @@
                     <img class="whatsAppIcon" src="<?php echo e(asset('images/whatsapp.png')); ?>" alt="">
                 </a>
 
-                <a href="<?php echo e(route('contacto')); ?>" style="border-bottom: 0">
-                    <img class="whatsAppIcon" src="<?php echo e(asset('images/mail.png')); ?>" alt="">
+
+
+
+
+                <a href="https://www.instagram.com/eji.villarreal/" style="border-bottom: 0">
+                    <img class="whatsAppIcon" src="<?php echo e(asset('images/instagram.png')); ?>" alt="">
                 </a>
             </div>
         </div>

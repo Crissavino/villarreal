@@ -21,8 +21,12 @@
                     <img class="whatsAppIcon" src="{{asset('images/whatsapp.png')}}" alt="">
                 </a>
 
-                <a href="{{route('contacto')}}" style="border-bottom: 0">
-                    <img class="whatsAppIcon" src="{{asset('images/mail.png')}}" alt="">
+{{--                <a href="{{route('contacto')}}" style="border-bottom: 0">--}}
+{{--                    <img class="whatsAppIcon" src="{{asset('images/mail.png')}}" alt="">--}}
+{{--                </a>--}}
+
+                <a href="https://www.instagram.com/eji.villarreal/" style="border-bottom: 0">
+                    <img class="whatsAppIcon" src="{{asset('images/instagram.png')}}" alt="">
                 </a>
             </div>
         </div>

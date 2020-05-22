@@ -30,9 +30,7 @@ class ContactoConfirmado extends Mailable
      */
     public function build()
     {
-        $body = 'Tu consulta fue recibidad correctamente. 
-            Nos pondremos en contacto a la brevedad al telefono brindado en el formulario. 
-            Muchas gracias';
+        $body = 'Gracias por su consulta. A la brevedad nos pondremos en contacto con Ud.-';
 
         return $this->from(config('mail.from.address'))
             ->subject('Contacto confirmado con EJI Villarreal')
