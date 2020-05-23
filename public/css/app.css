@@ -91,3 +91,9 @@
   }
 
 }
+@media screen and (max-width: 450px) {
+  .contactsDiv {
+    bottom: 80px;
+    right: 20px;
+  }
+}
