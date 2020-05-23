@@ -470,8 +470,8 @@
         'host' => 'smtp.googlemail.com',
         'port' => '465',
         'encryption' => 'ssl',
-        'username' => 'savinocristian89@gmail.com',
-        'password' => 'Campeon09!',
+        'username' => 'eji.villarreal@gmail.com',
+        'password' => 'estudio4711085',
         'timeout' => NULL,
       ),
       'ses' => 
@@ -503,7 +503,7 @@
     ),
     'from' => 
     array (
-      'address' => 'savinocristian89@gmail.com',
+      'address' => 'eji.villarreal@gmail.com',
       'name' => 'Laravel',
     ),
     'markdown' => 

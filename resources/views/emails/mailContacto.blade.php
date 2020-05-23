@@ -1,10 +1,10 @@
 <h1>Contacto recibido desde la web EJI Villarreal</h1>
 
-<br>Nombre de la persona que contacta: <br> <strong>{{ $fullName }}</strong> <br>
-<br>Telefono de la persona que contacta: <br> <strong> {{ $contactTel }} </strong> <br>
-<br>Motivo de su consulta: <br> <strong> {{$motivoConsulta}} </strong> <br>
-<br>Tipo de consulta: <br>
+<br> <h2>Nombre de la persona que contacta:</h2>  <strong>{{ $fullName }}</strong> <br>
+<br> <h2>Telefono de la persona que contacta:</h2>  <strong> {{ $contactTel }} </strong> <br>
+<br> <h2>Motivo de su consulta:</h2>  <strong> {{$motivoConsulta}} </strong> <br>
+<br> <h2>Tipo de consulta:</h2>
 @foreach ($tiposContacto as $tipoContacto)
     <strong> {{$tipoContacto}} </strong> <br>
 @endforeach
-<br>Consulta: <br> <p>{{ $body }}</p> <br>
+<br> <h2>Consulta:</h2> <p> <strong>{{ $body }}</strong> </p> <br>

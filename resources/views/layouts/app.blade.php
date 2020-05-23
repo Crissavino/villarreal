@@ -28,7 +28,9 @@
                 <a href="https://www.instagram.com/eji.villarreal/" style="border-bottom: 0">
                     <img class="whatsAppIcon" src="{{asset('images/instagram.png')}}" alt="">
                 </a>
+
             </div>
+            <script src="//code.tidio.co/q04k1jjccvubsjsbrdxqzrpb7qooaqul.js" async></script>
         </div>
 
 
@@ -37,7 +39,7 @@
         @include('partials.scripts')
         @yield('javascript')
         <script>
-          console.log('hola');
+          document.tidioChatLang = "es";
         </script>
     </div>
 </body>
