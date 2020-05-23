@@ -46,7 +46,7 @@ class ContactoRecibido extends Mailable
             ->view('emails.mailContacto')
             ->with([
                 'fullName' => $this->fromFullName,
-                'contactTel' => $this->contactTel,
+                'contactTel' => $this->contactTel ? $this->contactTel : 'Sin telefono',
                 'motivoConsulta' => $this->motivoConsulta,
                 'tiposContacto' => $this->tiposContacto,
                 'body' => $this->message

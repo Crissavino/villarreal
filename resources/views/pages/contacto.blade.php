@@ -5,11 +5,24 @@
 
         <section id="three" class="wrapper style1 fullscreen fade-up">
             <div class="inner">
+                @if(count($errors) !== 0)
+                    <div class="alert alert-danger" role="alert">
+
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>
+                                    {{ $error }}
+                                </li>
+                            @endforeach
+                        </ul>
+
+                    </div>
+                @endif
                 <h2>Contactate con nosotros</h2>
                 <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
                 <div class="style1">
                     <section>
-                        <form method="post" action="{{route('recibirContacto')}}">
+                        <form method="post" onsubmit="submitForm(this)" id="contactForm" action="{{route('recibirContacto')}}">
                             @METHOD('POST')
                             @csrf
                             <div class="fields gtr-uniform">
@@ -28,7 +41,7 @@
                                 <div class="field half">
                                     <label class="d-inline-block" for="tel">Telefono</label>
                                     <label class="d-inline-block text-muted" for="tel">(opcional)</label>
-                                    <input type="text" name="tel" id="tel" required/>
+                                    <input type="text" name="tel" id="tel"/>
                                 </div>
                                 <div class="field">
                                     <label for="">Motivo de su consulta</label>
@@ -43,7 +56,7 @@
                                     <label for="">Tipo de consulta</label>
 
                                     @foreach ($contactTypes as $contactType)
-                                            <input type="checkbox" id="{{$contactType->title}}" name="contactType[]" value="{{$contactType->title}}">
+                                            <input type="checkbox" class="contactType" id="{{$contactType->title}}" name="contactType[]" value="{{$contactType->title}}">
                                             <label for="{{$contactType->title}}">{{$contactType->title}}</label>
                                     @endforeach
 

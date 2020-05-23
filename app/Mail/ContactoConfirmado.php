@@ -32,8 +32,8 @@ class ContactoConfirmado extends Mailable
     {
         $body = 'Gracias por su consulta. A la brevedad nos pondremos en contacto con Ud.-';
 
-        return $this->from(config('mail.from.address'))
-            ->subject('Contacto confirmado con EJI Villarreal')
+//        return $this->from(config('mail.from.address'))
+        return $this->subject('Contacto confirmado con EJI Villarreal')
             ->view('emails.mailConfirmarContacto')
             ->with([
                 'fullName' => $this->fullName,

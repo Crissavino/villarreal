@@ -35,6 +35,31 @@ class PagesController extends Controller
 
     public function sendMailContacto(Request $request)
     {
+
+        $request->validate(
+            [
+                'name' => 'required | min:3',
+                'lastName' => 'required',
+                'email' => 'required | email',
+//                'tel' => 'required | min:5',
+                'motivoConsulta' => 'required',
+                'contactType' => 'required | array | min:1',
+                'message' => 'required | min:10 | max:10000',
+            ],
+            [
+                'name.required' => 'Tenes que ingresar tu nombre',
+                'name.min' => 'El nombre debe tener como mínimo 3 letras',
+                'lastName.required' => 'Tenes que ingresar tu apellido',
+                'email.required' => 'Tenes que ingresar tu email',
+//                'tel.required' => 'Tenes que ingresar tu telefono si es un producto nuevo',
+                'motivoConsulta.required' => 'Tenes que elegir un motivo de la consulta',
+                'contactType.required' => 'Tenes que seleccionar el tipo de la consulta',
+                'contactType.min' => 'Tenes que seleccionar como mínimo un tipo de consulta',
+                'message.required' => 'Tenes que ingresar un mensaje',
+                'message.min' => 'El mensaje debe tener como mínimo 10 letras',
+                'message.max' => 'El mensaje puede tener como máximo 10000 letras',
+            ]);
+
         $nameTo = $request->name;
         $lastNameTo = $request->lastName;
         $fullName = $nameTo.' '.$lastNameTo;

@@ -1,7 +1,7 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'Laravel',
+    'name' => 'Eji Villarreal',
     'env' => 'local',
     'debug' => true,
     'url' => 'http://localhost',
@@ -216,7 +216,7 @@
         'endpoint' => NULL,
       ),
     ),
-    'prefix' => 'laravel_cache',
+    'prefix' => 'eji_villarreal_cache',
   ),
   'cors' => 
   array (
@@ -314,7 +314,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'eji_villarreal_database_',
       ),
       'default' => 
       array (
@@ -504,7 +504,7 @@
     'from' => 
     array (
       'address' => 'eji.villarreal@gmail.com',
-      'name' => 'Laravel',
+      'name' => 'Eji Villarreal',
     ),
     'markdown' => 
     array (
@@ -599,7 +599,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'eji_villarreal_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
