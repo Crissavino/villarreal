@@ -27,7 +27,9 @@
                 <div class="card-header">
                     <h4 class="card-title">
 
-
+                        <a href="{{route('dashboard-blog')}}" class="btn-fill btn btn-success mb-5">
+                            Volver
+                        </a>
 
                     </h4>
                 </div>

@@ -33,6 +33,12 @@ Route::put('/admin/dashboard/blog/changeVisibility', 'DashboardController@change
 Route::get('/admin/dashboard/blog/edit/{id}', 'DashboardController@editArticle')->name('dashboard-edit-article')->middleware('isAdmin');
 Route::put('/admin/dashboard/blog/edit/{id}', 'DashboardController@updateArticle')->name('dashboard-update-article')->middleware('isAdmin');
 Route::delete('/admin/dashboard/blog/delete/{id}', 'DashboardController@deleteArticle')->name('dashboard-delete-article')->middleware('isAdmin');
+Route::get('/admin/dashboard/blog/tags', 'DashboardController@showTags')->name('dashboard-tags')->middleware('isAdmin');
+Route::get('/admin/dashboard/blog/tag/create', 'DashboardController@addTag')->name('dashboard-add-tag')->middleware('isAdmin');
+Route::post('/admin/dashboard/blog/tag/create', 'DashboardController@storeTag')->name('dashboard-store-tag')->middleware('isAdmin');
+Route::get('/admin/dashboard/blog/tag/edit/{id}', 'DashboardController@editTag')->name('dashboard-edit-tag')->middleware('isAdmin');
+Route::put('/admin/dashboard/blog/tag/edit/{id}', 'DashboardController@updateTag')->name('dashboard-update-tag')->middleware('isAdmin');
+Route::delete('/admin/dashboard/blog/tag/delete/{id}', 'DashboardController@deleteTag')->name('dashboard-delete-tag')->middleware('isAdmin');
 
 // FIN DASHBOARD
 

@@ -12,15 +12,18 @@
                 <div class="card-header">
                     <h4 class="card-title">
 
-
+                        <a href="{{route('dashboard-add-article')}}" class="btn-fill btn btn-success mb-5">
+                            Crear nuevo articulo
+                        </a>
+    
+                        <a href="{{route('dashboard-tags')}}" class="btn-fill btn btn-success mb-5">
+                            Ver tags
+                        </a>
 
                     </h4>
                 </div>
                 <div class="card-body">
-                    <a href="{{route('dashboard-add-article')}}" class="btn-fill btn btn-success mb-5">
-                        Crear nuevo articulo
-                    </a>
-
+                    
                     <div class="row">
                         @foreach ($articles as $article)
                             <div class="col-md-4 col-sm-6 mb-4">

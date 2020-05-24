@@ -88,7 +88,7 @@ class DashboardController extends Controller
             $this->storeImageArticle($data['title'], $request, $article->id);
         }
 
-        return redirect()->route('dashboard-blog')->with('success', 'Articulo editadp correctamente');
+        return redirect()->route('dashboard-blog')->with('success', 'Articulo editado correctamente');
     }
 
     public function deleteArticle(Request $request)
@@ -114,6 +114,62 @@ class DashboardController extends Controller
             return Response::json('El articulo ahora esta visible', 200);
         }
         return Response::json('El articulo ahora no esta visible', 200);
+    }
+
+    public function showTags()
+    {
+        $tags = Tag::all();
+
+        return view('dashboard.pages.blog.tag.show')->with('tags', $tags);
+    }
+
+    public function addTag()
+    {
+        return view('dashboard.pages.blog.tag.create');
+    }
+
+    public function storeTag(Request $request)
+    {
+        $this->validatePostTag($request);
+
+        $data = $request->all();
+
+        Tag::create($data);
+
+        return redirect()->route('dashboard-tags')->with('success', 'Tag creado correctamente');
+    }
+
+    public function editTag(Request $request)
+    {
+        $tag = Tag::find($request->id);
+
+        return view('dashboard.pages.blog.tag.edit')->with([
+            'tag' => $tag,
+        ]);
+    }
+
+    public function updateTag(Request $request)
+    {
+        $this->validatePostTag($request);
+
+        $tag = Tag::find($request->id);
+
+        $data = $request->all();
+
+        $tag->update($data);
+
+        return redirect()->route('dashboard-tags')->with('success', 'Tag editado correctamente');
+    }
+
+    public function deleteTag(Request $request)
+    {
+
+        $tag = Tag::find($request->id);
+
+        $tag->delete();
+
+        return redirect()->route('dashboard-tags')->with('success', 'Tag eliminado correctamente');;
+
     }
 
     /**
@@ -189,6 +245,24 @@ class DashboardController extends Controller
             'path'       => $request->getSchemeAndHttpHost().'/'.$pathImagen,
             'article_id' => $articleId
         ]);
+    }
+
+    /**
+     * @param Request $request
+     */
+    private function validatePostTag(Request $request): void
+    {
+        $request->validate(
+            [
+                'title'      => 'required | min:3 | max:60 | unique:tags,title,NULL,id,deleted_at,NULL',
+            ],
+            [
+                'title.required'      => 'Tenes que agregar un título',
+                'title.min'           => 'El título debe tener como mínimo 3 letras',
+                'title.max'           => 'El título debe tener como máximo 60 letras',
+                'title.unique'        => 'Ya existe este tag',
+            ]
+        );
     }
 
 }
