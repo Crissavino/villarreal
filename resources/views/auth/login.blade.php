@@ -61,7 +61,7 @@
                 </form>
 
                 <h3 style="display: inline-block; margin-left: 20px; margin-bottom: 20px;">
-                    No tiene cuenta? <a style="border-bottom: 0;" href="{{route('register')}}">Crea una</a>
+                    No tenes cuenta? <a style="border-bottom: 0;" href="{{route('register')}}">Crea una acá</a>
                 </h3>
                 @if (Route::has('password.request'))
                     <h4 style="display: block; margin-left: 20px">

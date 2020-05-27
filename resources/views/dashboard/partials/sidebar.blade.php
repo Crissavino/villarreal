@@ -1,17 +1,7 @@
 <div class="sidebar" data-color="blue" data-image="{{asset('dashboard/assets/img/sidebar-4.jpg')}}">
     <div class="sidebar-wrapper">
-        <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text">
-                Creative Tim
-            </a>
-        </div>
+{{--        <div class="logo"></div>--}}
         <ul class="nav">
-{{--            <li class="nav-item active">--}}
-{{--                <a class="nav-link" href="{{route('dashboard-index')}}">--}}
-{{--                    <i class="nc-icon nc-chart-pie-35"></i>--}}
-{{--                    <p>Dashboard</p>--}}
-{{--                </a>--}}
-{{--            </li>--}}
             <li>
                 <a class="nav-link" href="{{route('dashboard-blog')}}">
                     <i class="nc-icon nc-paper-2"></i>
@@ -36,6 +26,14 @@
                     <i class="nc-icon nc-align-center"></i>
                     <p>Ir a la webs</p>
                 </a>
+            </li>
+            <hr style="background-color: white">
+            <li>
+                <form class="text-center" method="post" action="{{route('logout')}}">
+                    @csrf
+                    @method('POST')
+                    <button class="btn btn-fill btn-danger" type="submit">Cerrar sesion</button>
+                </form>
             </li>
 
         </ul>
