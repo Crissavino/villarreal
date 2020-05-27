@@ -9,7 +9,7 @@
                 <a href="{{route('blog')}}"><h2>Articulos publicados</h2></a>
                     <ul class="actions small row d-inline-flex">
                         @foreach ($tags as $tag)
-                            <li><a href="{{route('blog', ['tagTitle' => $tag->title])}}" class="button primary small">{{$tag->title}}</a></li>
+                            <li><a href="{{route('blog', ['tagTitle' => $tag->title])}}" class="button primary small mt-3">{{$tag->title}}</a></li>
                         @endforeach
                     </ul>
                 <div class="features" id="blogContainer">
