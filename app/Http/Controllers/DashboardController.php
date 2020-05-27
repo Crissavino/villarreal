@@ -150,7 +150,7 @@ class DashboardController extends Controller
 
     public function updateTag(Request $request)
     {
-        $this->validatePostTag($request);
+        $this->validateUpdateTag($request);
 
         $tag = Tag::find($request->id);
 
@@ -255,6 +255,24 @@ class DashboardController extends Controller
         $request->validate(
             [
                 'title'      => 'required | min:3 | max:60 | unique:tags,title,NULL,id,deleted_at,NULL',
+            ],
+            [
+                'title.required'      => 'Tenes que agregar un título',
+                'title.min'           => 'El título debe tener como mínimo 3 letras',
+                'title.max'           => 'El título debe tener como máximo 60 letras',
+                'title.unique'        => 'Ya existe este tag',
+            ]
+        );
+    }
+
+    /**
+     * @param Request $request
+     */
+    private function validateUpdateTag(Request $request): void
+    {
+        $request->validate(
+            [
+                'title'      => "required | min:3 | max:60 | unique:tags,title, {$request->id},id,deleted_at,NULL",
             ],
             [
                 'title.required'      => 'Tenes que agregar un título',
