@@ -29,7 +29,7 @@
             @yield('content')
         </div>
 
-        @include('dashboard.partials.footer')
+{{--        @include('dashboard.partials.footer')--}}
     </div>
 
     @include('dashboard.partials.scripts')
