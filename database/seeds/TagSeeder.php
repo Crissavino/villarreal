@@ -27,6 +27,30 @@ class TagSeeder extends Seeder
 
                 ['title' => 'Comercial'],
 
+                ['title' => 'Sucesiones'],
+
+                ['title' => 'Daños y perjuicios'],
+
+                ['title' => 'ARBA'],
+
+                ['title' => 'AFIP'],
+
+                ['title' => 'Pymes'],
+
+                ['title' => 'Monotributo'],
+
+                ['title' => 'Economía'],
+
+                ['title' => 'Inmobiliario'],
+
+                ['title' => 'Seguros'],
+
+                ['title' => 'Trabajo'],
+
+                ['title' => 'Constitución'],
+
+                ['title' => 'SCBA'],
+
                 ['title' => 'Civil']
             ]
         );

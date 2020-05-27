@@ -1,7 +1,7 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'Laravel',
+    'name' => 'EJI Villarreal',
     'env' => 'local',
     'debug' => true,
     'url' => 'http://localhost',
@@ -177,7 +177,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/storage/framework/cache/data',
+        'path' => '/home/crissavino/Desktop/.proyects/villarreal/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -216,7 +216,7 @@
         'endpoint' => NULL,
       ),
     ),
-    'prefix' => 'laravel_cache',
+    'prefix' => 'eji_villarreal_cache',
   ),
   'cors' => 
   array (
@@ -262,11 +262,11 @@
       array (
         'driver' => 'mysql',
         'url' => NULL,
-        'host' => '127.0.0.1',
+        'host' => 'padelmanager.local',
         'port' => '3306',
         'database' => 'villarreal',
         'username' => 'root',
-        'password' => 'root',
+        'password' => 'secret',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -282,11 +282,11 @@
       array (
         'driver' => 'pgsql',
         'url' => NULL,
-        'host' => '127.0.0.1',
+        'host' => 'padelmanager.local',
         'port' => '3306',
         'database' => 'villarreal',
         'username' => 'root',
-        'password' => 'root',
+        'password' => 'secret',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -297,11 +297,11 @@
       array (
         'driver' => 'sqlsrv',
         'url' => NULL,
-        'host' => '127.0.0.1',
+        'host' => 'padelmanager.local',
         'port' => '3306',
         'database' => 'villarreal',
         'username' => 'root',
-        'password' => 'root',
+        'password' => 'secret',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -314,7 +314,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'eji_villarreal_database_',
       ),
       'default' => 
       array (
@@ -343,12 +343,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/storage/app',
+        'root' => '/home/crissavino/Desktop/.proyects/villarreal/storage/app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/storage/app/public',
+        'root' => '/home/crissavino/Desktop/.proyects/villarreal/storage/app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -365,7 +365,7 @@
     ),
     'links' => 
     array (
-      '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/public/storage' => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/storage/app/public',
+      '/home/crissavino/Desktop/.proyects/villarreal/public/storage' => '/home/crissavino/Desktop/.proyects/villarreal/storage/app/public',
     ),
   ),
   'hashing' => 
@@ -399,13 +399,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/storage/logs/laravel.log',
+        'path' => '/home/crissavino/Desktop/.proyects/villarreal/storage/logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/storage/logs/laravel.log',
+        'path' => '/home/crissavino/Desktop/.proyects/villarreal/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -455,7 +455,7 @@
       ),
       'emergency' => 
       array (
-        'path' => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/storage/logs/laravel.log',
+        'path' => '/home/crissavino/Desktop/.proyects/villarreal/storage/logs/laravel.log',
       ),
     ),
   ),
@@ -470,8 +470,8 @@
         'host' => 'smtp.googlemail.com',
         'port' => '465',
         'encryption' => 'ssl',
-        'username' => 'savinocristian89@gmail.com',
-        'password' => 'Campeon09!',
+        'username' => 'eji.villarreal@gmail.com',
+        'password' => 'estudio4711085',
         'timeout' => NULL,
       ),
       'ses' => 
@@ -503,15 +503,15 @@
     ),
     'from' => 
     array (
-      'address' => 'savinocristian89@gmail.com',
-      'name' => 'Laravel',
+      'address' => 'eji.villarreal@gmail.com',
+      'name' => 'EJI Villarreal',
     ),
     'markdown' => 
     array (
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/resources/views/vendor/mail',
+        0 => '/home/crissavino/Desktop/.proyects/villarreal/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -590,7 +590,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/storage/framework/sessions',
+    'files' => '/home/crissavino/Desktop/.proyects/villarreal/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -599,7 +599,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'eji_villarreal_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -610,9 +610,9 @@
   array (
     'paths' => 
     array (
-      0 => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/resources/views',
+      0 => '/home/crissavino/Desktop/.proyects/villarreal/resources/views',
     ),
-    'compiled' => '/Users/cristiansavino/Desktop/Trabajo_FSWD/villarreal/storage/framework/views',
+    'compiled' => '/home/crissavino/Desktop/.proyects/villarreal/storage/framework/views',
   ),
   'flare' => 
   array (

@@ -12,6 +12,17 @@
   font-weight: 400;
 }
 
+.marca {
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  font-size: 1.2em;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+}
+
 .lastArticleImage{
 
 }
@@ -60,6 +71,12 @@
 
 .whatsAppIcon {
   width: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+  .marca {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 736px) {

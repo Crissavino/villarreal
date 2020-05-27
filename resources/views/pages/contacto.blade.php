@@ -18,11 +18,14 @@
 
                     </div>
                 @endif
-                <h2>Contactate con nosotros</h2>
-                <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+                <h2>Contacto</h2>
+                <p>
+                    Envianos tu consulta, a la brevedad nos pondremos en contacto
+                </p>
                 <div class="style1">
                     <section>
-                        <form method="post" onsubmit="submitForm(this)" id="contactForm" action="{{route('recibirContacto')}}">
+                        <form method="post" onsubmit="submitForm(this)" id="contactForm"
+                              action="{{route('recibirContacto')}}">
                             @METHOD('POST')
                             @csrf
                             <div class="fields gtr-uniform">
@@ -56,15 +59,17 @@
                                     <label for="">Tipo de consulta</label>
 
                                     @foreach ($contactTypes as $contactType)
-                                            <input type="checkbox" class="contactType" id="{{$contactType->title}}" name="contactType[]" value="{{$contactType->title}}">
-                                            <label for="{{$contactType->title}}">{{$contactType->title}}</label>
+                                        <input type="checkbox" class="contactType" id="{{$contactType->title}}"
+                                               name="contactType[]" value="{{$contactType->title}}">
+                                        <label for="{{$contactType->title}}">{{$contactType->title}}</label>
                                     @endforeach
 
 
                                 </div>
                                 <div class="field">
                                     <label class="d-inline-block" for="message">Escriba su consulta</label>
-                                    <label class="d-inline-block text-muted" for="">(Mencionar si posee algun tipo de documentación)</label>
+                                    <label class="d-inline-block text-muted" for="">(Mencionar si posee algun tipo de
+                                        documentación)</label>
                                     <textarea name="message" id="message" required rows="5"></textarea>
                                 </div>
                             </div>

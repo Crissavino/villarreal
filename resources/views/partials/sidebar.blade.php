@@ -1,10 +1,15 @@
 <section id="sidebar">
     <div class="inner">
+        <div class="marca">
+            Villarreal <br>
+            Abogados
+        </div>
+
         <nav>
             <ul>
                 <li><a href="{{route('index')}}">Bienvenido</a></li>
-                <li><a onclick="goToIndexOne()" href="{{route('index')}}#one">Ultimos articulos</a></li>
                 <li><a onclick="goToIndexTwo()" href="{{route('index')}}#two">Quienes somos?</a></li>
+                <li><a onclick="goToIndexOne()" href="{{route('index')}}#one">Ultimos articulos</a></li>
                 <li><a href="{{route('contacto')}}">Contactanos</a></li>
                 @auth
                     @if (auth()->user()->isAdmin)
@@ -26,9 +31,8 @@
         <nav id="hamburgerNav">
             <ul id="hamburgerUL">
                 <li id="hamburgerLI"><a href="{{route('index')}}">Bienvenido</a></li>
-                <li id="hamburgerLI"><a onclick="goToIndexOne()" href="{{route('index')}}#one">Ultimos articulos</a>
-                </li>
                 <li id="hamburgerLI"><a onclick="goToIndexTwo()" href="{{route('index')}}#two">Quienes somos?</a></li>
+                <li id="hamburgerLI"><a onclick="goToIndexOne()" href="{{route('index')}}#one">Ultimos articulos</a></li>
                 <li id="hamburgerLI"><a href="{{route('contacto')}}">Contactanos</a></li>
                 @auth
                     @if (auth()->user()->isAdmin)

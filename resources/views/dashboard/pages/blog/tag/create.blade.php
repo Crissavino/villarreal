@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-info btn-fill btn-block">Guardar tag</button>
+                        <button type="submit" style="cursor: pointer" class="btn btn-info btn-fill btn-block">Guardar tag</button>
                         <div class="clearfix"></div>
                     </form>
                 </div>
