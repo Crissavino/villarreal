@@ -47,7 +47,9 @@
                                         <a href="{{route('dashboard-edit-article', ['id' => $article->id])}}" class="btn-block btn-fill mt-2 mb-2 btn btn-primary d-inline-block">
                                             Editar
                                         </a>
-                                        <form class="d-inline-block w-100" action="{{route('dashboard-delete-article', ['id' => $article->id])}}">
+                                        <form class="d-inline-block w-100" method="post" action="{{route('dashboard-delete-article', ['id' => $article->id])}}">
+                                            @csrf
+                                            @method('DELETE')
                                             <button class="btn-fill btn btn-danger btn-block" type="submit">Eliminar</button>
                                         </form>
                                     </div>
