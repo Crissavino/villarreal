@@ -27,7 +27,7 @@
                 quis lorem.</p>
             <div class="features" id="blogContainer">
                 @foreach ($articles as $article)
-                    <section class="d-block w-100">
+                    <section class="d-block w-100" data-aos="flip-left">
                         <a href="{{route('articulo', ['id' => $article->id])}}"><span
                                     class="image lastArticleImage left"><img src="{{$article->image->path}}"
                                                                              alt=""></span></a>
@@ -46,7 +46,7 @@
     </section>
 
     <!-- Two -->
-    <section id="two" class="wrapper style1 spotlights">
+    <section id="two" class="wrapper style1 spotlights" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1500">
 
         <section>
             <a href="{{route('nosotros')}}" class="image"
