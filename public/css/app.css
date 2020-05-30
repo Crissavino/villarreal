@@ -14,13 +14,13 @@
 
 .marca {
   color: rgba(255, 255, 255, 1);
-  text-align: left;
-  font-size: 1.2em;
-  font-family: 'Crimson Text', serif;
+  text-align: center;
+  font-size: 4em;
+  /*font-family: 'Crimson Text', serif;*/
   font-weight: 600;
   position: absolute;
-  top: -30px;
-  left: -20px;
+  top: 0;
+  left: 65px;
 }
 
 .lastArticleImage{
@@ -114,3 +114,33 @@
     right: 20px;
   }
 }
+
+/* INICIO ANIMACIONES*/
+/*.marca {*/
+/*  position: relative;*/
+/*  font-weight: 300;*/
+/*  font-size: 4.5em;*/
+/*  color: #402d2d;*/
+/*}*/
+
+.marca .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.marca .ampersand {
+  font-weight: 600;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.marca .letters {
+  display: inline-block;
+  opacity: 0;
+}
+/* FIN INICIO ANIMACIONES*/
