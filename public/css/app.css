@@ -14,8 +14,10 @@
 
 .marca {
   color: rgba(255, 255, 255, 1);
-  text-align: center;
+  text-align: left;
+  width: 100%;
   font-size: 4em;
+  margin-top: 15px;
   /*font-family: 'Crimson Text', serif;*/
   font-weight: 600;
   position: absolute;
@@ -69,6 +71,14 @@
   z-index: 1000 !important;
 }
 
+#sidebar .inner nav {
+  margin-top: 20px !important;
+}
+
+.introMobile {
+  display: none !important;
+}
+
 .whatsAppIcon {
   width: 40px;
 }
@@ -77,9 +87,21 @@
   .marca {
     display: none;
   }
+
+  #sidebar .inner nav {
+    margin-top: 0 !important;
+  }
 }
 
 @media screen and (max-width: 736px) {
+
+  .introMobile {
+    display: flex !important;
+  }
+
+  .introDesktop {
+    display: none !important;
+  }
 
   .hamburgerMenuIcon {
     display: block !important;
@@ -129,7 +151,7 @@
   padding-top: 0.1em;
   padding-right: 0.05em;
   padding-bottom: 0.15em;
-  line-height: 1em;
+  line-height: 0.85em;
 }
 
 .marca .ampersand {
