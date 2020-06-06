@@ -1,15 +1,15 @@
 <section id="sidebar">
     <div class="marca">
         <span class="text-wrapper">
-            <span class="letters letters-left">V</span>
-            <span class="letters ampersand">&amp;</span>
-            <span class="letters letters-right">V</span>
-          </span>
+            <span class="letters letters-left">V</span><br>
+            <span style="margin-left: 70px; font-size: 80%" class="letters ampersand">&amp;</span><br>
+            <span style="margin-left: 150px" class="letters letters-right">V</span>
+        </span>
     </div>
 
     <div class="inner">
 
-        <nav>
+        <nav style="margin-top: 20px">
             <ul>
                 <li class="link"><a href="{{route('index')}}">Bienvenido</a></li>
                 <li class="link"><a onclick="goToIndexTwo()" href="{{route('index')}}#two">Quienes somos?</a></li>
@@ -89,18 +89,18 @@
     </script>
 
     <script>
-        let links = document.querySelectorAll('.link');
+      let links = document.querySelectorAll('.link');
 
-        links.forEach( (link) => {
-          link.addEventListener('mouseover', () => {
-            link.classList.add('animate__pulse')
-            link.classList.add('animate__animated')
-          })
+      links.forEach((link) => {
+        link.addEventListener('mouseover', () => {
+          link.classList.add('animate__pulse');
+          link.classList.add('animate__animated');
+        });
 
-          link.addEventListener('mouseout', () => {
-            link.classList.remove('animate__pulse')
-            link.classList.remove('animate__animated')
-          })
-        })
+        link.addEventListener('mouseout', () => {
+          link.classList.remove('animate__pulse');
+          link.classList.remove('animate__animated');
+        });
+      });
     </script>
 @endsection

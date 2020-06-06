@@ -13,7 +13,7 @@
     <div>
         @include('partials.sidebar')
 
-        <div id="wrapper" style="overflow-x: hidden">
+        <div id="wrapper" style="overflow-x: hidden;">
             @yield('content')
 
             <div class="contactsDiv">

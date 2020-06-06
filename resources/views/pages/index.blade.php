@@ -4,27 +4,122 @@
 
 @section('content')
 
+    <!-- Intro Mobile-->
+{{--    <section id="intro" class="wrapper style1 fullscreen fade-up">--}}
+{{--        <div class="flashMessage">--}}
+{{--            @include('flash.messages')--}}
+{{--        </div>--}}
+{{--        <div class="inner">--}}
+{{--            <h1 class="nombreMarca">V & V</h1>--}}
+{{--            <p class="pieMarca">Valora a quien te dedica su tiempo, es lo único irrecuperable en la vida.</p>--}}
+{{--            --}}{{--            <ul class="actions">--}}
+{{--            --}}{{--                <li><a href="#one" class="button scrolly">Learn more</a></li>--}}
+{{--            --}}{{--            </ul>--}}
+{{--        </div>--}}
+{{--    </section>--}}
+
     <!-- Intro -->
     <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="flashMessage">
             @include('flash.messages')
         </div>
-        <div class="inner">
-            <h1 class="nombreMarca">V & V</h1>
-            <p class="pieMarca">Valora a quien te dedica su tiempo, es lo único irrecuperable en la vida.</p>
-            {{--            <ul class="actions">--}}
-            {{--                <li><a href="#one" class="button scrolly">Learn more</a></li>--}}
-            {{--            </ul>--}}
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{asset('images/salaDeEspera.jpeg')}}"
+                         style="-webkit-filter: grayscale(100%);
+                            filter: grayscale(100%);
+                            margin: auto;
+                            overflow: auto;
+                            height: 100vh;
+                            transform: translateX(-225px);"
+                         class="d-block"
+                         alt="...">
+                    <img src="{{asset('images/prueba1.jpg')}}"
+                         style="-webkit-filter: grayscale(100%);
+                            filter: grayscale(100%);
+                            margin: auto;
+                            overflow: auto;
+                            height: 100vh;
+                            width: 100%;"
+                         class="d-none"
+                         alt="...">
+                    <div class="carousel-caption item1" style="
+                        top: 50%;
+                        transform: translateY(-50%);
+                        bottom: initial;"
+                    >
+                        <p class="text-center" style="
+                            /*color: #312450;*/
+                            font-size: 1em;
+                            font-weight: bold;
+                            letter-spacing: 0.25em;
+                            line-height: 1.75;
+                            outline: 0;"
+                        >
+                            Estudio Juridico Integral Villarreal <br>
+                            Dr. Luis Lujan Villarreal <br>
+                            Dr. Fernando Villarreal <br>
+                            "Mejor que el hombre que sabe lo que es justos, es el hombre que ama lo justo"
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{asset('images/salaDeReunion.jpeg')}}"
+                         style="-webkit-filter: grayscale(100%);
+                            filter: grayscale(100%);
+                            overflow: auto;
+                            height: 100vh;
+                            transform: translateX(-445px);"
+                         class="d-block"
+                         alt="...">
+                    <img src="{{asset('images/prueba2.jpg')}}"
+                         style="-webkit-filter: grayscale(100%);
+                            filter: grayscale(100%);
+                            margin: auto;
+                            overflow: auto;
+                            height: 100vh;
+                            width: 100%;"
+                         class="d-none"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="
+                        top: 50%;
+                        transform: translateY(-50%);
+                        bottom: initial;"
+                    >
+                        <p class="text-center" style="
+                            /*color: #312450;*/
+                            font-size: 1em;
+                            font-weight: bold;
+                            letter-spacing: 0.25em;
+                            line-height: 1.75;
+                            outline: 0;"
+                        >
+                            Contamos con un equipo de expertos dedicados al derecho empresarial, civil, comercial,
+                            laboral, tributario, penal y familia
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
     </section>
 
     <!-- One -->
     <section id="one" class="wrapper style2 fade-up">
         <div class="inner">
-            <h2>Ultimos articulos publicados</h2>
-            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
-                quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit
-                quis lorem.</p>
+            <h2>Noticias</h2>
+            <p>
+                Informate con nuestros artículos de actualidad jurídica y tributaria
+            </p>
             <div class="features" id="blogContainer">
                 @foreach ($articles as $article)
                     <section class="d-block w-100" data-aos="flip-left">
@@ -40,7 +135,7 @@
                 @endforeach
             </div>
             <ul class="actions">
-                <li><a href="{{route('blog')}}" class="button">Ver el blog</a></li>
+                <li><a href="{{route('blog')}}" class="button">Ver más</a></li>
             </ul>
         </div>
     </section>
@@ -49,13 +144,12 @@
     <section id="two" class="wrapper style1 spotlights" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1500">
 
         <section>
-            <a href="{{route('nosotros')}}" class="image"
-               style="background-image: url('{{asset('images/pic03.jpg')}}'); background-position: center center">
-                {{--                <img src="{{asset('images/pic03.jpg')}}" alt="" data-position="center center"/>--}}
-            </a>
+{{--            <a href="{{route('nosotros')}}" class="image"--}}
+{{--               style="background-image: url('{{asset('images/pic03.jpg')}}'); background-position: center center">--}}
+{{--            </a>--}}
             <div class="content">
                 <div class="inner">
-                    <h2>Estudio Juridico Villarreal</h2>
+                    <h2>Estudio Jurídico Integral Villarreal</h2>
                     <p>
                         Con mas de 30 años de experiencia, nuestro grupo de trabajo cuenta con un fuerte enfoque en el
                         derecho empresarial de avanzada sin descuidar las demás ramas del derecho particular.
@@ -79,7 +173,7 @@
                         que al realizar una consulta, resolveremos la misma de manera eficiente.
                     </p>
                     <ul class="actions" style="margin-bottom: 0 !important;">
-                        <li><a href="{{route('nosotros')}}" class="button">Saber mas</a></li>
+                        <li><a href="{{route('nosotros')}}" class="button">Saber más</a></li>
                     </ul>
                 </div>
             </div>
@@ -95,4 +189,3 @@
     {{--    </section>--}}
 
 @endsection
-
