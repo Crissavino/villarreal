@@ -41,13 +41,13 @@
     </div>
 @endsection
 
-@section('javascript')
-    <script>
-      const tagButton = document.getElementById('toggleTags')
-      const collapsedTags = document.getElementById('collapsedTags')
+<script>
+  setTimeout( () => {
+    const tagButton = document.getElementById('toggleTags')
+    const collapsedTags = document.getElementById('collapsedTags')
 
-      tagButton.addEventListener('click', () => {
-        collapsedTags.classList.toggle('show')
-      })
-    </script>
-@stop
+    tagButton.addEventListener('click', () => {
+      collapsedTags.classList.toggle('show')
+    })
+  }, 200)
+</script>

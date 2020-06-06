@@ -85,7 +85,6 @@
     </div>
 @endsection
 
-@section('javascript')
-    <script src="{{asset('js/contacto.js')}}"></script>
-@stop
+<script src="{{asset('js/contacto.js')}}"></script>
+
 
