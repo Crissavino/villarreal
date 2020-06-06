@@ -56,8 +56,9 @@
                     >
                         <p class="text-center" style="
                             /*color: #312450;*/
-                            font-size: 1em;
-                            font-weight: bold;
+                            font-size: 1em !important;
+                            font-family: 'Crimson Text', serif;
+                            font-weight: 400;
                             letter-spacing: 0.25em;
                             line-height: 1.75;
                             outline: 0;"
@@ -94,8 +95,9 @@
                     >
                         <p class="text-center" style="
                             /*color: #312450;*/
-                            font-size: 1em;
-                            font-weight: bold;
+                            font-size: 1em !important;
+                            font-family: 'Crimson Text', serif;
+                            font-weight: 400;
                             letter-spacing: 0.25em;
                             line-height: 1.75;
                             outline: 0;"

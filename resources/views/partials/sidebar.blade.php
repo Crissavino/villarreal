@@ -87,10 +87,6 @@
         offset: '-=800',
       });
 
-      let marcaMobile = document.querySelector('.marcaMobile')
-
-      console.log(marcaMobile);
-
       anime.timeline({loop: false}).add({
         targets: '.marcaMobile .line',
         opacity: [0.5, 1],
