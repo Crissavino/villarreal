@@ -13,7 +13,7 @@
             <ul>
                 <li class="link"><a href="{{route('index')}}">Bienvenido</a></li>
                 <li class="link"><a onclick="goToIndexTwo()" href="{{route('index')}}#two">Quienes somos?</a></li>
-                <li class="link"><a onclick="goToIndexOne()" href="{{route('index')}}#one">Ultimos articulos</a></li>
+                <li class="link"><a onclick="goToIndexOne()" href="{{route('index')}}#one">Últimas noticias</a></li>
                 <li class="link"><a href="{{route('contacto')}}">Contactanos</a></li>
                 @auth
                     @if (auth()->user()->isAdmin)
@@ -37,7 +37,7 @@
                 <li id="hamburgerLI"><a href="{{route('index')}}">Bienvenido</a></li>
                 <li id="hamburgerLI"><a onclick="goToIndexTwo()" href="{{route('index')}}#two">Quienes somos?</a>
                 </li>
-                <li id="hamburgerLI"><a onclick="goToIndexOne()" href="{{route('index')}}#one">Ultimos articulos</a>
+                <li id="hamburgerLI"><a onclick="goToIndexOne()" href="{{route('index')}}#one">Últimas noticias</a>
                 </li>
                 <li id="hamburgerLI"><a href="{{route('contacto')}}">Contactanos</a></li>
                 @auth
