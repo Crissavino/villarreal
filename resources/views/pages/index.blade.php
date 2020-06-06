@@ -10,7 +10,15 @@
             @include('flash.messages')
         </div>
         <div class="inner">
-            <h1 class="nombreMarca">V & V</h1>
+            <div class="marcaMobile">
+                <span class="text-wrapper">
+                    <span style="margin-left: -140px;" class="letters letters-left">V</span><br>
+                    <span style="font-size: 80%" class="letters ampersand">&amp;</span><br>
+                    <span style="margin-left: 150px" class="letters letters-right">V</span>
+                </span>
+            </div>
+
+{{--            <h1 class="nombreMarca">V & V</h1>--}}
             <p class="pieMarca">Mejor que el hombre que sabe lo que es justos, es el hombre que ama lo justo.</p>
         </div>
     </section>
@@ -138,12 +146,13 @@
     </section>
 
     <!-- Two -->
-    <section id="two" class="wrapper style1 spotlights" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1500">
+    <section id="two" class="wrapper style1 spotlights" data-aos="fade-left" data-aos-offset="250"
+             data-aos-duration="1500">
 
         <section>
-{{--            <a href="{{route('nosotros')}}" class="image"--}}
-{{--               style="background-image: url('{{asset('images/pic03.jpg')}}'); background-position: center center">--}}
-{{--            </a>--}}
+            {{--            <a href="{{route('nosotros')}}" class="image"--}}
+            {{--               style="background-image: url('{{asset('images/pic03.jpg')}}'); background-position: center center">--}}
+            {{--            </a>--}}
             <div class="content">
                 <div class="inner">
                     <h2>Estudio Jurídico Integral Villarreal</h2>

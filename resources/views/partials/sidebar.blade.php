@@ -86,6 +86,39 @@
         duration: 800,
         offset: '-=800',
       });
+
+      let marcaMobile = document.querySelector('.marcaMobile')
+
+      console.log(marcaMobile);
+
+      anime.timeline({loop: false}).add({
+        targets: '.marcaMobile .line',
+        opacity: [0.5, 1],
+        scaleX: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+      }).add({
+        targets: '.marcaMobile .ampersand',
+        opacity: [0, 1],
+        scaleY: [0.5, 1],
+        easing: 'easeInOutExpo',
+        duration: 800,
+        offset: '-=800',
+      }).add({
+        targets: '.marcaMobile .letters-left',
+        opacity: [0, 1],
+        translateX: ['2em', 0],
+        easing: 'easeInOutExpo',
+        duration: 800,
+        offset: '-=300',
+      }).add({
+        targets: '.marcaMobile .letters-right',
+        opacity: [0, 1],
+        translateX: ['-2em', 0],
+        easing: 'easeInOutExpo',
+        duration: 800,
+        offset: '-=800',
+      });
     </script>
 
     <script>

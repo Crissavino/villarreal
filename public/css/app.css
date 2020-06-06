@@ -25,6 +25,16 @@
   left: 65px;
 }
 
+.marcaMobile {
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  width: 100%;
+  font-size: 4em;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+}
+
 .lastArticleImage{
 
 }
@@ -145,7 +155,7 @@
 /*  color: #402d2d;*/
 /*}*/
 
-.marca .text-wrapper {
+.marca .text-wrapper{
   position: relative;
   display: inline-block;
   padding-top: 0.1em;
@@ -154,14 +164,25 @@
   line-height: 0.85em;
 }
 
-.marca .ampersand {
+.marcaMobile .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 0.65em;
+}
+
+.marca .ampersand,
+.marcaMobile .ampersand {
   font-weight: 600;
   width: 1em;
   margin-right: -0.1em;
   margin-left: -0.1em;
 }
 
-.marca .letters {
+.marca .letters,
+.marcaMobile .letters {
   display: inline-block;
   opacity: 0;
 }
