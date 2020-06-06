@@ -9,7 +9,7 @@
 
     <div class="inner">
 
-        <nav>
+        <nav style="margin-top: 20px">
             <ul>
                 <li class="link"><a href="{{route('index')}}">Bienvenido</a></li>
                 <li class="link"><a onclick="goToIndexTwo()" href="{{route('index')}}#two">Quienes somos?</a></li>
