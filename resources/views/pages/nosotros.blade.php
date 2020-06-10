@@ -20,7 +20,7 @@
                     Nuestro estudio, situado en la ciudad de La Plata, Provincia de Buenos Aires, se encuentra orientado
                     a dar soluciones jurídicas y financieras a nuestros clientes confiándonos estos más que sus
                     problemas legales. <br>
-                    Es por eso que el tiempo y dedicación nos avalas haciendo de nuestra profesión un estilo de vida
+                    Es por eso que el tiempo y dedicación nos avalan haciendo de nuestra profesión un estilo de vida
                     llevando a cabo la misma con responsabilidad y sobre todo, con JUSTICIA.
                 </p>
 
