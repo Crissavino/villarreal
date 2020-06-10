@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Intro Mobile-->
-    <section id="intro" class="wrapper style1 fullscreen fade-up introMobile">
+    <section id="intro" style="background-image: url({{asset('images/oficina2.jpeg')}});" class="wrapper style1 fullscreen fade-up introMobile">
         <div class="flashMessage">
             @include('flash.messages')
         </div>
@@ -18,8 +18,24 @@
                 </span>
             </div>
 
-{{--            <h1 class="nombreMarca">V & V</h1>--}}
-            <p class="pieMarca">Mejor que el hombre que sabe lo que es justos, es el hombre que ama lo justo.</p>
+            {{--            <h1 class="nombreMarca">V & V</h1>--}}
+            <div class="mt-5">
+                <p class="pieMarca" style="margin-bottom: 0 !important;">
+                    Dr. Luis Lujan Villarreal
+                </p>
+
+                <p class="pieMarca" style="margin-bottom: 0 !important;">
+                    Dr. Fernando Villarreal
+                </p>
+
+                <p class="pieMarca">
+                    Abogados
+                </p>
+            </div>
+
+{{--            <p class="pieMarca">Mejor que el hombre que sabe lo que es justos, es el hombre que ama lo justo.</p>--}}
+
+
         </div>
     </section>
 
@@ -30,14 +46,14 @@
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active fade-up">
+                <div class="carousel-item  fade-up">
                     <img src="{{asset('images/salaDeEspera.jpeg')}}"
-                         style="-webkit-filter: grayscale(100%);
-                            filter: grayscale(100%);
+                         style="-webkit-filter: blur(8px);
+                            filter: blur(8px);
                             margin: auto;
                             overflow: auto;
                             height: 100vh;
-                            transform: translateX(-225px);"
+                            transform: translateX(-925px);"
                          class="d-block image"
                          alt="...">
                     <img src="{{asset('images/prueba1.jpg')}}"
@@ -51,29 +67,30 @@
                          alt="...">
                     <div class="carousel-caption" style="
                         top: 50%;
-                        transform: translateY(-15%);
+                        transform: translateY(-45%);
                         bottom: initial;"
                     >
                         <p class="text-center" style="
                             /*color: #312450;*/
                             font-size: 1em !important;
-                            font-family: 'Crimson Text', serif;
+                            /*font-family: 'Crimson Text', serif;*/
                             font-weight: 400;
                             letter-spacing: 0.25em;
                             line-height: 1.75;
                             outline: 0;"
                         >
-                            Estudio Juridico Integral Villarreal <br>
+                            Estudio Juridico Integral <br>
                             Dr. Luis Lujan Villarreal <br>
-                            Dr. Fernando Villarreal <br><br>
+                            Dr. Fernando Villarreal <br>
+                            Abogados <br><br><br>
                             "Mejor que el hombre que sabe lo que es justos, es el hombre que ama lo justo"
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item fade-up">
+                <div class="carousel-item active fade-up">
                     <img src="{{asset('images/salaDeReunion.jpeg')}}"
-                         style="-webkit-filter: grayscale(100%);
-                            filter: grayscale(100%);
+                         style="-webkit-filter: blur(8px);
+                            filter: blur(8px);
                             overflow: auto;
                             height: 100vh;
                             transform: translateX(-445px);"
@@ -90,13 +107,13 @@
                          alt="...">
                     <div class="carousel-caption" style="
                         top: 50%;
-                        transform: translateY(-30%);
+                        transform: translateY(-40%);
                         bottom: initial;"
                     >
                         <p class="text-center" style="
                             /*color: #312450;*/
                             font-size: 1em !important;
-                            font-family: 'Crimson Text', serif;
+                            /*font-family: 'Crimson Text', serif;*/
                             font-weight: 400;
                             letter-spacing: 0.25em;
                             line-height: 1.75;
@@ -121,10 +138,10 @@
     </section>
 
     <!-- One -->
-    <section id="one" class="wrapper style2 fade-up">
+    <section id="one" class="wrapper style2 fade-up prueba">
         <div class="inner">
             <h2>Noticias</h2>
-            <p>
+            <p style="font-size: 24px;">
                 Informate con nuestros artículos de actualidad jurídica y tributaria
             </p>
             <div class="features" id="blogContainer">
@@ -152,9 +169,9 @@
              data-aos-duration="1500">
 
         <section>
-            {{--            <a href="{{route('nosotros')}}" class="image"--}}
-            {{--               style="background-image: url('{{asset('images/pic03.jpg')}}'); background-position: center center">--}}
-            {{--            </a>--}}
+{{--            <a href="{{route('nosotros')}}" class="image"--}}
+{{--               style="background-image: url('{{asset('images/pic03.jpg')}}'); background-position: center center">--}}
+{{--            </a>--}}
             <div class="content">
                 <div class="inner">
                     <h2>Estudio Jurídico Integral Villarreal</h2>
