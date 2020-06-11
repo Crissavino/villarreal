@@ -112,6 +112,12 @@
   }
 }
 
+@media screen and (max-height: 760px) {
+  #sidebar > .inner {
+    min-height: 720px;
+  }
+}
+
 @media screen and (max-width: 736px) {
 
   .introMobile {
