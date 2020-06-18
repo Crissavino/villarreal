@@ -17,7 +17,7 @@
             @yield('content')
 
             <div class="contactsDiv">
-                <a href="https://wa.me/544119656?text=Me%20gustaria%20hacerles%20una%20concuslta" target="_blank" style="border-bottom: 0">
+                <a href="https://wa.me/5492214119656?text=Me%20gustaria%20hacerles%20una%20concuslta" target="_blank" style="border-bottom: 0">
                     <img class="whatsAppIcon" src="{{asset('images/whatsapp.png')}}" alt="">
                 </a>
 
