@@ -32,7 +32,7 @@
                                         <h4 class="card-title">{{$article->title}}</h4>
                                     </div>
                                     <div class="card-body">
-                                        <p class="card-text">{!! Str::limit($article->content, 200) !!}</p>
+                                        <p class="card-text">{!! Str::limit(strip_tags($article->content), 200) !!}</p>
                                     </div>
                                     <div class="card-footer text-center mt-3">
                                         @if ($article->visible)
